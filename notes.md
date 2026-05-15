@@ -1,4 +1,4 @@
-### Objects, types, and values
+## Objects, types, and values
 
 An _Object_ is a region in memory with a type.  
 A named object is called a _variable._  
@@ -11,7 +11,7 @@ _Narrowing conversions_ happend when values, when converted, they lose data (e.g
 
 We prefer _universal and uniform initialization `{}`,_ but we use `=` out of habit.
 
-### Computation
+## Computation
 
 _Computation_ is taking input(s) and giving output(s) based on the input(s).
 
@@ -58,7 +58,7 @@ Functions should reflect the structure of a program, and describe the logicly se
 
 range-for-statements are only used to iterate over a sequence in order. For more sophisticated iterations use for-statements.
 
-### Errors
+## Errors
 
 Compile-time errors:
 
@@ -107,7 +107,7 @@ _Systematic testing_ is executing a program with a large and systmaticlly select
 A run with a set of inputs is called a _test case._  
 Systematic testing can't be done by humans.
 
-### Writing a program
+## Writing a program
 
 In this chapter we write a calculator. Writing one requires experience, a mentor, or literature. People been writing calculators for decades (50+ years), and how to write one has a standard answer.
 
@@ -164,7 +164,7 @@ _Pseudo code_ describes the main logic of a program.
 
 ---
 
-### Completing a program
+## Completing a program
 
 We made a _prototype_ of a calculator. Now that we have a prototype we can experiment, try out ideas, and come up with a better version.
 
@@ -183,7 +183,7 @@ The mechanism for storing (name, value) pairs is called _symbol table,_ and it's
 
 As it happens, we have now seen a simple example of how a compiler works. The calculator analyzes input broken down into tokens and understood according to a grammar. That's exactly with a compiler does. After analyzing its input, the compiler then produces a representation (object code) that we can later execute. The calculator immediately executes the expressions it has analyzed; programs that do that are called interpreters rather than compilers.
 
-### Technicalities: functions, etc.
+## Technicalities: functions, etc.
 
 We consider how to express ideas as code far more interesting than the technical details of the programming language that we use to express those ideas. However, we don't always have a choice. Your programming language is a foreign language for which you need to look at “grammar and vocabulary.”
 
@@ -231,7 +231,7 @@ A name composed of a namespace (or a class name) and a member-name combined usin
     using std::string; // a using declaration
     using namespace std; // a using diractive
 
-### Technicalities: classes, etc.
+## Technicalities: classes, etc.
 
 A type is called “built-in” if the compiler knows how to represent objects of the type, and which operations can be done on it without being told by declarations supplied by a programmer in source-code.
 
@@ -285,7 +285,7 @@ Keep interfaces minimal (though complete), because a small interface is easier t
 
 _Helper functions_ take arguments of the classes they are helper of. Helper functions are also called _convenience functions_ and _auxiliary functions._ Helper functions are a design concept.
 
-### Input and output streams
+## Input and output streams
 
 Most operating systems separate the detailed handling of I/O devices into _device drivers,_ and programs then access the device drivers through an I/O library that makes I/O from/to different sources appear as similar as possible.
 
@@ -329,7 +329,7 @@ Overloading an input operator is basically an exercise in error handling.
 
 File formats are often peculiar, and we don't always have the freedom to choose a file format. If a format is too awful, we could write a format-conversion program, or simply just deal with that awful format. After all, files are just the way they are, and we have to deal with them.
 
-### Customizing input and output
+## Customizing input and output
 
 As programmers we, prefer _regularity;_ treating all objects and input sources equivalently, and imposing a single standard on how to represent objects entering and exiting the system give the cleanest, simplest, most maintainable, and often the most efficient code.
 
@@ -357,7 +357,7 @@ When moving from character-oriented I/O to _binary I/O_, we give up our `<<` and
 Every file opened for reading has a _read/get position,_ and every file opened for writing has a _write/put position._  
 It's undefined to seek beyond the end of a file.
 
-### A display model
+## A display model
 
 The iostream library is oriented toward reading and writing streams of characters. The only supported graphical notion is the notion of “graphical position” that is supported using the newline and tab characters. You can embed notions of color, two-dimensional positions, etc. in one-dimensional stream of characters using _typesetting and markup languages_ such as TeX, LaTeX, HTML, etc.
 
@@ -383,7 +383,7 @@ A lot of the shapes in our modern world are rectangles, because it's the simples
 
 Making a rectangle by placing points in the right places isn't enough to make a rectangle. For example, a Polygon doesn't represent a Rectangle in memory — adding a fifth point proves it. The same thing applies to making a Polygon using a Closed_polyline — adding a point that makes an intersectional line proves it. And the same thing applies to making a circle using an ellipse by making `major = minor` — changing either proves it.
 
-### Graphics classes
+## Graphics classes
 
 Graphics and GUI libraries provide lots of facilties. By “lots” we mean hunderds of classes, and often functions for each. Reading a documentation is daunting! It can also be exciting — looking at the facilities can make you feel like a child in a candy store.
 
@@ -398,7 +398,7 @@ Vector_ref stores named and unnamed objects.
 
 The reason for restricting Text's string to be a single-line is to ensure protablity across systems. Don't try to put `\n` as it's undefined.
 
-### Graphics class design
+## Graphics class design
 
 Our ideal is a minimal interface that allows us to do what we want. We also want our interfaces to have a common, style; that is, the same operations having the same name, taking arguments of the same types, and in the same order.
 
