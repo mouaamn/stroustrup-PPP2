@@ -411,7 +411,7 @@ Note that “abstract” and “concrete” are simply technical words for every
 
 _Virtual functions_ is the ability to define a function in a base class, and have a function of the same name and type in a derived class called when a user calls the base class function. This is often called _run-time polymorphism,_ dynamic dispatch, or run-time dispatch.
 
-Circle consist of two parts: Shape and Circle. Imagine copying only the Shape part. that's called _slicing._ That's why we disable copy operations for base classes. [See](https://pastebin.com/VwgDvMFR).
+Circle consist of two parts: Shape and Circle. Imagine copying only the Shape part. That's called _slicing._ The Circle part is sliced off. That's why we disable copy operations for base classes. [See](https://pastebin.com/VwgDvMFR).
 
 _Derivation_ is away to build one class from another so that the new class can be used in the place of the original. This is often called _inheritance,_ because the derived class (also called “subclass”) inherits all the members of its base (also called “superclass”).
 
