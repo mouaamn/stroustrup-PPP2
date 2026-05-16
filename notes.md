@@ -431,3 +431,4 @@ Each object of Circle will have its own `vptr` pointing to the same `vtbl`. [See
 Defining a function of the same name and type of a virtual function from a base class so that the function from the derived class is put into the `vtbl` instead of the version from the base is called _overriding_.
 
 Functions must be declared `virtual` only in class declaration.
+`struct Foo : Doo` is by default public derivation, but `class Foo : Doo` is by default private derivation. The base is said to be a public or a private base.
