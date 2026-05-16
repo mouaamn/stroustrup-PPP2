@@ -419,12 +419,13 @@ Inheritence, run-time polymorphism, and encapsulation is the most common definit
 C++ supports other programming styles other than OOP such a as _generic programming._  
 C++ borrowed its key mechanisms from Simula67 ([67](https://www.youtube.com/watch?v=L7ejl_Hj3A8)), the first language to directly support OOP.
 
-One more piece of data is added to an object of a class with virtual functions: a pointer called `vptr` pointing to a `vtbl`. For example, a Doo class with one virtual function will have the static `vtbl`:
+One more piece of data is added to an object of a class with virtual functions: a pointer called `vptr` pointing to an address of a static `vtbl` that contains the virtual functions. For example, a Circle inheirts from Shape which has 2 virual functions, and then it overrides one. So the `vtbl` would look like this:
 
     ╔═════════════════════╗
-    ║Doo::foo()           ║
+    ║Circle::draw_lines   ║
+    ║Shape::move          ║
     ╚═════════════════════╝
 
-and each object of Doo will have its own `vptr` pointing to `vtbl`. A derived class can override it, and have its own function instead of Doo's.
+Each object of Circle will have its own `vptr` pointing to the same `vtbl`. [See](https://x.com/mouaamn/status/2040044852579295372).
 
-Defining a function of the same name and type of a virtual function from a base class so that the function from the derived class is put into `vtbl` instead of the version from the base is called _overriding_.
+Defining a function of the same name and type of a virtual function from a base class so that the function from the derived class is put into the `vtbl` instead of the version from the base is called _overriding_.
