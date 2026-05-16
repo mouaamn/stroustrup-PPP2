@@ -429,3 +429,5 @@ One more piece of data is added to an object of a class with virtual functions: 
 Each object of Circle will have its own `vptr` pointing to the same `vtbl`. [See](https://x.com/mouaamn/status/2040044852579295372).
 
 Defining a function of the same name and type of a virtual function from a base class so that the function from the derived class is put into the `vtbl` instead of the version from the base is called _overriding_.
+
+Functions must be declared `virtual` only in class declaration.
