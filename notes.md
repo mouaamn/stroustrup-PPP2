@@ -432,3 +432,5 @@ Defining a function of the same name and type of a virtual function from a base 
 
 Functions must be declared `virtual` only in class declaration.  
 `struct Foo : Doo` is by default public derivation, but `class Foo : Doo` is by default private derivation. The base is said to be a public or a private base. Though you could be explicit by specifying `public` or `private` keyword.
+
+You can get the compiler to check if a function overrides or not by using the `override` keyword.
