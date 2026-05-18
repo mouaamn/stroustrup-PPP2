@@ -434,3 +434,5 @@ Functions must be declared `virtual` only in class declaration.
 `struct Foo : Doo` is by default public derivation, but `class Foo : Doo` is by default private derivation. The base is said to be a public or a private base. Though you could be explicit by specifying `public` or `private` keyword.
 
 You can get the compiler to check if a function overrides or not by using the `override` keyword.
+
+If you want to become a language lawyer you need to study Stroustrup, The Design and Evolution of C++ and The C++ Programming Language, and the ISO C++ standard. We don't recommend becoming a language lawyer (someone knowing every little detail of the language definition); being a programmer (whatever you call someone who actually uses the language) is much more fun and typically much more useful to society.
