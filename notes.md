@@ -439,6 +439,10 @@ If you want to become a language lawyer you need to study Stroustrup, The Design
 
 One way to make an abstract class is by making its constructors protected. Another, is by making _pure vertual functions_. A pure virtual function only adds `= 0;` to a virtual function declaration. A derived class must override all pure virtual functions or else it will become abstract too.
 
+If a base of class D is private, its public and protected members can be used only by members of D.  
+If a base of class D is protected, its public and protected memebrs can be used only by members of D, and members of classes derived from D.  
+If a base is public, its public members can be used by all.
+
 We want derivation for two reasons:
 
 - Interface inheritance: a function expecting a Shape can accept a Circle, and use Circle through the interface of a Shape.
