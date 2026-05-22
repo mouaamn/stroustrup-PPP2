@@ -438,3 +438,8 @@ You can get the compiler to check if a function overrides or not by using the `o
 If you want to become a language lawyer you need to study Stroustrup, The Design and Evolution of C++ and The C++ Programming Language, and the ISO C++ standard. We don't recommend becoming a language lawyer (someone knowing every little detail of the language definition); being a programmer (whatever you call someone who actually uses the language) is much more fun and typically much more useful to society.
 
 One way to make an abstract class is by making its constructors protected. Another, is by making _pure vertual functions_. A pure virtual function only adds `= 0;` to a virtual function declaration. A derived class must override all pure virtual functions or else it will become abstract too.
+
+We want derivation for two reasons:
+
+- Interface inheritance: a function expecting a Shape can accept a Circle, and use Circle through the interface of a Shape.
+- Implementation inheritance: we can use the facilities offered by Shape.
