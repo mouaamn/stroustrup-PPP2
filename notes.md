@@ -447,3 +447,5 @@ We want derivation for two reasons:
 
 - Interface inheritance: a function expecting a Shape can accept a Circle, and use Circle through the interface of a Shape.
 - Implementation inheritance: we can use the facilities offered by Shape.
+
+> Classes, inheritence, encapsulation, and run-time polymorphism are among the most powerful tools for structuring systems.
