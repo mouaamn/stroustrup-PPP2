@@ -449,3 +449,6 @@ We want derivation for two reasons:
 - Implementation inheritance: we can use the facilities offered by Shape.
 
 > Classes, inheritence, encapsulation, and run-time polymorphism are among the most powerful tools for structuring systems.
+
+## Graphing functions and data
+
