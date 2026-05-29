@@ -452,3 +452,6 @@ We want derivation for two reasons:
 
 ## Graphing functions and data
 
+The following type is a variant of a standard library type called std::function that can remember a function to be called later:
+
+    using Fct = double (*)(double);
