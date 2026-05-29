@@ -452,6 +452,12 @@ We want derivation for two reasons:
 
 ## Graphing functions and data
 
-The following type is a variant of a standard library type called std::function that can remember a function to be called later:
+The following is a type alias for a function pointer:
 
     using Fct = double (*)(double);
+
+Consider the following code fragment:
+
+    std::function fct{ [](double x) { std::cout << x << '\n'; } };
+
+the `[](double x) { std::cout << x << '\n'; }` is a _lambda expression;_ that is, it's an unnamed function. The `[]` is called a _lambda introducer_. After the lambda introducer, the lambda expression specifies what arguments are required, and what actions to be performed. The return type can be deduced from the lambda body, but you can explicitly specify it: `[](double x) -> double { std::cout << x << '\n'; }`.
