@@ -461,3 +461,5 @@ Consider the following code fragment:
     std::function fct{ [](double x) { std::cout << x << '\n'; } };
 
 the `[](double x) { std::cout << x << '\n'; }` is a _lambda expression;_ that is, it's an unnamed function. The `[]` is called a _lambda introducer,_ it can capture a name, but when it does, it can't convert to a function pointer. After the lambda introducer, the lambda expression specifies what arguments are required, and what actions to be performed. The return type can be deduced from the lambda body, but you can explicitly specify it: `[](double x) -> double { std::cout << x << '\n'; }`. Tho, the ideal is not to.
+
+> Displaying data is a highly skilled and valued craft. When done well, it combines technical and artistic aspects and can add significantly to our understanding of complex phenomena.
