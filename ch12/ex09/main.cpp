@@ -6,7 +6,7 @@ int main()
 try {
 	using namespace Graph_lib;
 
-	const Point TL{ 100, 100 };
+	constexpr Point TL{ 100, 100 };
 	Simple_window win{ TL, 600, 400, "Chapter 12: Exercise 9: I got them" };
 
 	Image mouaamn{ Point{ 0, 0 }, "Mouaamn.png" };

@@ -6,7 +6,7 @@ int main()
 try {
 	using namespace Graph_lib;
 
-	const Point TL{ 100, 100 };
+	constexpr Point TL{ 100, 100 };
 	Simple_window win{ TL, 600, 400, "Chapter 12: Exercise 8" };
 
 	Circle blue_ring{ Point{ 170, 150 }, 50 };

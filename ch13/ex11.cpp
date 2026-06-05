@@ -6,7 +6,7 @@ int main()
 try {
 	using namespace Graph_lib;
 
-	const Point TL{ 100, 100 };
+	constexpr Point TL{ 100, 100 };
 	Simple_window win{ TL, 800, 600, "Chapter 13: Exercise 11" };
 
 	Ellipse e{ { 400, 300 }, 300, 200 };
