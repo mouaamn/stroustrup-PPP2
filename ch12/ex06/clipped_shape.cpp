@@ -1,3 +1,8 @@
+/*
+	What happens when you draw a Shape that doesn’t fit inside its window?
+	> It gets clipped
+*/
+
 #include <Simple_window.h>
 #include <Graph.h>
 

@@ -1,3 +1,8 @@
+/*
+	What happens when you draw a Window that doesn’t fit on your screen?
+	> It gets clipped
+*/
+
 #include <Simple_window.h>
 #include <Graph.h>
 
