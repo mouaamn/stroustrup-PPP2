@@ -467,3 +467,9 @@ the `[](double x) { std::cout << x << '\n'; }` is a _lambda expression;_ that is
 Adjacent string literals such as `"Mouaamn's unclear " "destiny."` get concatenated by the compiler.
 
 ## Graphical user interfaces
+
+Every program has a user interface. For example, a clculator's UI is its buttons and screen. For a user like you who has a monitor, a keyboard, and a poniting device, the interface can be of three:
+
+- console user interface (CUI): iostreams.
+- graphical user interface (GUI): Win32, FLTK.
+- web user interface (WUI): HTML, and usually a scripting language.
