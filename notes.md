@@ -7,7 +7,7 @@ An object’s type specifies what value can be stored in the object, and what op
 A _whitespace_ is a space, a newline, or a tab.
 
 A program is _type-safe_ when it uses types according to their rules.
-_Narrowing conversions_ happend when values, when converted, they lose data (e.g., float to int).
+_Narrowing conversions_ happened when values, when converted, they lose data (e.g., float to int).
 
 We prefer _universal and uniform initialization `{}`,_ but we use `=` out of habit.
 
@@ -48,7 +48,7 @@ Doing something several times is called _repetition_ or — iteration when you g
 
 while-statements poorly manage their _loop/control variable._
 
-A _compund-statement/block_ is a sequence of statements delimited by curly-braces.  
+A _compound-statement/block_ is a sequence of statements delimited by curly-braces.  
 A _vector_ is a sequence of elements accessed by an index.
 
 A _function_ is a named sequence of statements.  
@@ -149,7 +149,7 @@ When you work on a problem you repeatedly go through these stages:
 - Design: Create an overall structure for the system, deciding which parts the implementation should have, how these parts should communicate.
 - Implementation: Write the code, debug it, and test it.
 
-Here are some suggetions for problem solving: 
+Here are some suggestions for problem solving: 
 
 - Given specification.
   - Is it clear? Don't be a future creep, and ask too much.
@@ -235,7 +235,7 @@ A name composed of a namespace (or a class name) and a member-name combined usin
 
 A type is called “built-in” if the compiler knows how to represent objects of the type, and which operations can be done on it without being told by declarations supplied by a programmer in source-code.
 
-User defined types (UDTs) include the ones in the standard library, and the ones you will declare once you get the technicalities under your belt. We consider the standard library types, UDTs, because they are built from the same pirmitives and with the same technicues we use to build UDTs; the standard library builders don't have special privileges that you don't have.
+User defined types (UDTs) include the ones in the standard library, and the ones you will declare once you get the technicalities under your belt. We consider the standard library types, UDTs, because they are built from the same primitives and with the same techniques we use to build UDTs; the standard library builders don't have special privileges that you don't have.
 
 The help from a type, comes in two forms:
 
@@ -311,12 +311,12 @@ A file has a _format;_ that is, it has a set of rules that determine what the by
 When a file stream goes out of scope, its associated file is closed. When a file is closed, its associated buffer is “flushed;” that is, the characters from the buffer are written to the file.  
 Opening the file using a constructor, and relying on the destructor to take care of closing the file is the ideal.
 
-The reasons for input operations failling are limitless, but the std::istream limits them to four cases, called the _stream state:_
+The reasons for input operations failing are limitless, but the std::istream limits them to four cases, called the _stream state:_
 
 - good
 - eof
 - fail
-- bad: something serious happend
+- bad: something serious happened
 
 If an input operation encounters a simple format error, it lets the stream `fail()`, assuming that you might be able to recover, or throws an exception if there's no chance of recovery. On the other hand, if something really nasty happens, such as a bad disk read, the input operation lets the stream go `bad()`.  
 If the stream is bad it's also fail.
@@ -343,14 +343,14 @@ Seeing a value without a base can be confusing. For example, the decimal `11` is
 Decimals don't have a base, hexadecimals have `0x` or `0X`, and octals have `0`.
 
 std::defaultfloat chooses between std::fixed, and std::scientific based who gives the most accurate representation.  
-_Precision_ is `6` by defualt, and its meaning depends:
+_Precision_ is `6` by default, and its meaning depends:
 
 - defaultfloat: precision is the total number of digits.
 - fixed and scientific: precision is the number of digits after the decimal point.
 
 When output doesn't fit on a field (it's considered an overflow), the ostream breaks the output format. Bad formatting is always preferable to “bad output data.”
 
-What a stream asccoicated to a file can do, depends on its modes (properties).
+What a stream assoicated to a file can do, depends on its modes (properties).
 
 When moving from character-oriented I/O to _binary I/O_, we give up our `<<` and `>>` operators, because they turn values into character sequences. We use `write()` and `read()` instead.
 
@@ -372,10 +372,10 @@ We use a GUI library/toolkit called “FLTK” to support all operating systems,
 A _computer screen_ is a rectangular area composed of pixels.  
 A _pixle_ is a tiny spot that can be given a color.  
 A _Window_ is a rectangular region of a screen devoted to some specific purpose, and controlled by a program.  
-The area of a window that you can draw on is reffered to as a _canvas,_ and sometimes as “the inside of a window.”  
+The area of a window that you can draw on is referred to as a _canvas,_ and sometimes as “the inside of a window.”  
 Some screens have bigger pixles than others.
 
-Line, Lines, Polygon, Axis, Rectangle, Text, and Image, all derive from Shape — dircetly or indirectly.
+Line, Lines, Polygon, Axis, Rectangle, Text, and Image, all derive from Shape — directly or indirectly.
 Simple_window derive from Window.  
 Shape is called a _base class_ for them, and they are called _derived classes._ For example, Shape is a “base” of Line.
 
@@ -385,7 +385,7 @@ Making a rectangle by placing points in the right places isn't enough to make a 
 
 ## Graphics classes
 
-Graphics and GUI libraries provide lots of facilties. By “lots” we mean hunderds of classes, and often functions for each. Reading a documentation is daunting! It can also be exciting — looking at the facilities can make you feel like a child in a candy store.
+Graphics and GUI libraries provide lots of facilities. By “lots” we mean hundreds of classes, and often functions for each. Reading a documentation is daunting! It can also be exciting — looking at the facilities can make you feel like a child in a candy store.
 
 One purpose of our interface classes is to reduce the shock delivered by a full graphics/GUI library.
 
@@ -393,10 +393,10 @@ You can only change the access-level of non-constructors with `using-declaration
 
 “Poly” is a Greek word for “many.” A Closed_polyline connects the last Point with the first, where as an Open_polyline doesn't.
 
-std::vector has a default constructor, and a std::intializer_list constructor.  
+std::vector has a default constructor, and a std::initializer_list constructor.  
 Vector_ref stores named and unnamed objects.
 
-The reason for restricting Text's string to be a single-line is to ensure protablity across systems. Don't try to put `\n` as it's undefined.
+The reason for restricting Text's string to be a single-line is to ensure portablity across systems. Don't try to put `\n` as it's undefined.
 
 ## Graphics class design
 
@@ -407,7 +407,7 @@ Shape's constructors are all _protected._ That means they can only be used by de
 A class is _abstract_ if it can be used only as a base class.  
 A class that can be used to create objects; that is, the opposite of an abstract class, is called a _concrete_ class.
 
-Note that “abstract” and “concrete” are simply technical words for everyday distiction. We might go to the store to buy a camera. However, we can't just ask for a camera and take it home. What brand of camera? Which particular model camera? The word “camera” is a generalization; it refers to an abstract notion. An Olympus E-M5 refers to a specific kind of camera, which we might aquire a particular instance of: a particular camera with a unique serial number. So “camera” is like an abstract (base) class; “Olympus E-M5” is much like a concrete (derived) class, and the actual camera in my hand would be much like an object.
+Note that “abstract” and “concrete” are simply technical words for everyday distinction. We might go to the store to buy a camera. However, we can't just ask for a camera and take it home. What brand of camera? Which particular model camera? The word “camera” is a generalization; it refers to an abstract notion. An Olympus E-M5 refers to a specific kind of camera, which we might acquire a particular instance of: a particular camera with a unique serial number. So “camera” is like an abstract (base) class; “Olympus E-M5” is much like a concrete (derived) class, and the actual camera in my hand would be much like an object.
 
 _Virtual functions_ is the ability to define a function in a base class, and have a function of the same name and type in a derived class called when a user calls the base class function. This is often called _run-time polymorphism,_ dynamic dispatch, or run-time dispatch, because the function called is determined at run-time.
 
@@ -415,11 +415,11 @@ Circle consist of two parts: Shape and Circle. Imagine copying only the Shape pa
 
 _Derivation_ is away to build one class from another so that the new class can be used in the place of the original. This is often called _inheritance,_ because the derived class (also called “subclass”) inherits all the members of its base (also called “superclass”).
 
-Inheritence, run-time polymorphism, and encapsulation is the most common definition of object-orinted programming.  
+Inheritance, run-time polymorphism, and encapsulation is the most common definition of object-orinted programming.  
 C++ supports other programming styles other than OOP such a as _generic programming._  
 C++ borrowed its key mechanisms from Simula67 ([67](https://www.youtube.com/watch?v=L7ejl_Hj3A8)), the first language to directly support OOP.
 
-One more piece of data is added to an object of a class with virtual functions: a pointer called `vptr` pointing to an address of a static `vtbl` that contains the virtual functions. For example, a Circle inheirts from Shape which has 2 virual functions, and then it overrides one. So the `vtbl` would look like this:
+One more piece of data is added to an object of a class with virtual functions: a pointer called `vptr` pointing to an address of a static `vtbl` that contains the virtual functions. For example, a Circle inherits from Shape which has 2 virtual functions, and then it overrides one. So the `vtbl` would look like this:
 
     ╔═════════════════════╗
     ║Circle::draw_lines   ║
@@ -440,7 +440,7 @@ If you want to become a language lawyer you need to study Stroustrup, The Design
 One way to make an abstract class is by making its constructors protected. Another, is by making _pure vertual functions_. A pure virtual function only adds `= 0;` to a virtual function declaration. A derived class must override all pure virtual functions or else it will become abstract too.
 
 If a base of class D is private, its public and protected members can be used only by members of D.  
-If a base of class D is protected, its public and protected memebrs can be used only by members of D, and members of classes derived from D.  
+If a base of class D is protected, its public and protected members can be used only by members of D, and members of classes derived from D.  
 If a base is public, its public members can be used by all.
 
 We want derivation for two reasons:
@@ -448,7 +448,7 @@ We want derivation for two reasons:
 - Interface inheritance: a function expecting a Shape can accept a Circle, and use Circle through the interface of a Shape.
 - Implementation inheritance: we can use the facilities offered by Shape.
 
-> Classes, inheritence, encapsulation, and run-time polymorphism are among the most powerful tools for structuring systems.
+> Classes, inheritance, encapsulation, and run-time polymorphism are among the most powerful tools for structuring systems.
 
 ## Graphing functions and data
 
@@ -468,7 +468,7 @@ Adjacent string literals such as `"Mouaamn's unclear " "destiny."` get concatena
 
 ## Graphical user interfaces
 
-Every program has a user interface. For example, a clculator's UI is its buttons and screen. For a user like you who has a monitor, a keyboard, and a poniting device, the interface can be of three:
+Every program has a user interface. For example, a calculator's UI is its buttons and screen. For a user like you who has a monitor, a keyboard, and a pointing device, the interface can be of three:
 
 - console user interface (CUI): iostreams.
 - graphical user interface (GUI): Win32, FLTK.
