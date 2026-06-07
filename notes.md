@@ -62,8 +62,8 @@ range-for-statements are only used to iterate over a sequence in order. For more
 
 Compile-time errors:
 
-- Syntax errors: not well formed to language grammar
-- Type errors: mismatch between variables, and assigned values (arguments, initializirs, etc.)
+- Syntax errors: not well formed to language grammar.
+- Type errors: mismatch between variables, and assigned values (arguments, initializirs, etc.).
 
 Link-time errors: ODR, missing definitions, etc.
 
@@ -83,9 +83,9 @@ Narrowing is a logical error. To prevent it, we implement narrow_cast\<type>(val
 
 _Debugging_ is the process of finding and removing bugs. It goes like this:
 
-- Get the program to compile
-- Get the program to link
-- Get the program to do what it's supposed to do
+1. Get the program to compile
+2. Get the program to link
+3. Get the program to do what it's supposed to do
 
 and repeat until the program is free of errors, or errors we consider unacceptable for it.
 
@@ -191,8 +191,8 @@ Most programming concepts are universal, but _language-technicalities_ are speci
 
 A _declaration_ is a statement that introduces a name into a scope.
 
-  - Specifying a type for what is named (e.g., a function or a variable)
-  - Optionally, specifying an initializer (e.g., an initializer value or a function body)
+  - Specifying a type for what is named (e.g., a function or a variable).
+  - Optionally, specifying an initializer (e.g., an initializer value or a function body).
 
 Examples include: `int a = 5;`, `extern int b;` `int foo(int);`.
 
@@ -240,7 +240,7 @@ User defined types (UDTs) include the ones in the standard library, and the ones
 The help from a type, comes in two forms:
 
 - Representation: the data that represents an object — called its “current state/value.”
-- Operations
+- Operations.
 
 C++ provides two kinds of UDTs: _classes_ and _enumerations._  
 If you think of something as a separate entity, it's likely that you should define a class to represent that “thing.” A class should always represent a concept; that is, it shouldn't be just a collection of data and functions.
@@ -267,8 +267,8 @@ Writing a member function definition within a class definition has two primary e
 An _enum_ (called an enumeration) is a UDT that specifies a set of symbolic constants (called _enumerators_).  
 There are two types of enums:
 
-- enum classes (also called “scoped enumerations”)
-- plain enums
+- enum classes (also called “scoped enumerations”).
+- plain enums.
 
 Prefer enum classes over “plain” enums, and expect seeing “plain” enums in older code, because they were introduced in C++11.
 
@@ -346,7 +346,7 @@ std::defaultfloat chooses between std::fixed, and std::scientific based who give
 _Precision_ is `6` by defualt, and its meaning depends:
 
 - defaultfloat: precision is the total number of digits.
-- fixed and scientific: precision is the number of digits after the decimal point
+- fixed and scientific: precision is the number of digits after the decimal point.
 
 When output doesn't fit on a field (it's considered an overflow), the ostream breaks the output format. Bad formatting is always preferable to “bad output data.”
 
