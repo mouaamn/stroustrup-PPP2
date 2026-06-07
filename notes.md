@@ -465,3 +465,5 @@ the `[](double x) { std::cout << x << '\n'; }` is a _lambda expression;_ that is
 > Displaying data is a highly skilled and valued craft. When done well, it combines technical and artistic aspects and can add significantly to our understanding of complex phenomena.
 
 Adjacent string literals such as `"Mouaamn's unclear " "destiny."` get concatenated by the compiler.
+
+## Graphical user interfaces
