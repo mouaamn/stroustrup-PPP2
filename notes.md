@@ -475,3 +475,14 @@ Every program has a user interface. For example, a calculator's UI is its button
 - web user interface (WUI): HTML, and usually a scripting language.
 
 A _callback function_ is a function you give (e.g. to a GUI system) to be called later.
+
+A GUI system like FLTK (and the operating system) can be used by programs written in a variety of languages. So, it can't impose C++ styles on all users. In particular, it does not know about our Simple_window class or our Button class. In fact, it doesn't know about classes or functions at all. The type required for a callback function is chosen so that it's usable from the lowest level of programming including C and assembly. A callback function returns no value and takes two addresses as its arguments. We can declare a C++ member function that obeys those rules like this:
+
+    static void cb_next(Address, Address pw) 
+    // address of the widget which triggered the callback 
+    // address of the window containing the widget 
+    {
+        reference_to<Simple_window>(pw).next();
+    }
+
+The Address type specifies an address of “something in memory.” We are so close to the hardware and don't get the usual help from the language, so we can't use C++ references here. The `reference_to<Simple_window>(pw).next()` casts the raw address to a `Simple_window&`.
