@@ -197,7 +197,7 @@ A _declaration_ is a statement that introduces a name into a scope.
 Examples include: `int a = 5;`, `extern int b;` `int foo(int);`.
 
 A declaration that fully specifies the entity declared is called a _definition._  
-Examples include: `int a = 5;`, `int b;` `int foo(int n){ return 3*n; }`.
+Examples include: `int a = 5;`, `int b;` `int foo(int n){ return 3*n; };`.
 
 A definition specifies exactly what a name refers to. For example, a definition of a variable supplies the object (the memory). A definition of a function supplies the function body (the excutable statements). So, you can't define twice, but you can declare twice or more.
 
