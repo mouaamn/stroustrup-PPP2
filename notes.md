@@ -473,3 +473,5 @@ Every program has a user interface. For example, a calculator's UI is its button
 - console user interface (CUI): iostreams.
 - graphical user interface (GUI): Win32, FLTK.
 - web user interface (WUI): HTML, and usually a scripting language.
+
+A _callback function_ is a function you give (e.g. to a GUI system) to be called later.
