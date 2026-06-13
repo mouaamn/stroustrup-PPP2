@@ -490,3 +490,5 @@ The Address type specifies an address of “something in memory.” We are so cl
 Yes, _widget_ really is a technical term. A more descriptive, but less evocative, name for a widget is a _control._ We use widgets to define forms of interactions (e.g., button) with a program through GUI. [See](https://learn.microsoft.com/en-us/windows/win32/controls/window-controls).
 
 If you forget to name a local variable, the compiler will delete it, assuming that you aren't making use of it.
+
+When code is managed by a GUI system, a thrown exception may never find a handler, because the GUI system or the operating system may be oblivious to C++ exceptions; that is, it could be “eaten.”
