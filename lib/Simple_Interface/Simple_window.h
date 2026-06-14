@@ -1,3 +1,6 @@
+#ifndef SIMPLE_WINDOW_GUARD
+#define SIMPLE_WINDOW_GUARD
+
 #include "GUI.h"
 
 using namespace Graph_lib;
@@ -13,3 +16,5 @@ private:
 	static void cb_next(Address, Address); // callback for next button
 	void next(); // action to be done when next_button is pressed
 };
+
+#endif
