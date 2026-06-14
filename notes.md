@@ -54,7 +54,7 @@ A _vector_ is a sequence of elements accessed by an index.
 A _function_ is a named sequence of statements.  
 If a computation is a worthy of a name, it should be a function.  
 Every function should do a single logical action.  
-Functions should reflect the structure of a program, and describe the logicly separate parts.
+Functions should reflect the structure of a program, and describe the logically separate parts.
 
 range-for-statements are only used to iterate over a sequence in order. For more sophisticated iterations use for-statements.
 
@@ -103,7 +103,7 @@ _Estimation_ is a noble art that combines common sense and some arithmetic appli
 _Guesstimation_ combines guessing with a bit of calculation.  
 Some people are good at doing estimates in their head, but I prefer doing it on a whiteboard.
 
-_Systematic testing_ is executing a program with a large and systmaticlly selected set of inputs and comparing the results with what was expected.  
+_Systematic testing_ is executing a program with a large and systematically selected set of inputs and comparing the results with what was expected.  
 A run with a set of inputs is called a _test case._  
 Systematic testing can't be done by humans.
 
@@ -145,7 +145,7 @@ Could you articulate an explanation in sufficient detail and precisely enough fo
 
 When you work on a problem you repeatedly go through these stages:
 
-- Analysis: Figure out what should be done and write a description of your understanding of the problem. Such description is called a _set of requirments_ or _specification._
+- Analysis: Figure out what should be done and write a description of your understanding of the problem. Such description is called a _set of requirements_ or _specification._
 - Design: Create an overall structure for the system, deciding which parts the implementation should have, how these parts should communicate.
 - Implementation: Write the code, debug it, and test it.
 
@@ -350,7 +350,7 @@ _Precision_ is `6` by default, and its meaning depends:
 
 When output doesn't fit on a field (it's considered an overflow), the ostream breaks the output format. Bad formatting is always preferable to “bad output data.”
 
-What a stream assoicated to a file can do, depends on its modes (properties).
+What a stream associated to a file can do, depends on its modes (properties).
 
 When moving from character-oriented I/O to _binary I/O_, we give up our `<<` and `>>` operators, because they turn values into character sequences. We use `write()` and `read()` instead.
 
@@ -361,7 +361,7 @@ It's undefined to seek beyond the end of a file.
 
 The iostream library is oriented toward reading and writing streams of characters. The only supported graphical notion is the notion of “graphical position” that is supported using the newline and tab characters. You can embed notions of color, two-dimensional positions, etc. in one-dimensional stream of characters using _typesetting and markup languages_ such as TeX, LaTeX, HTML, etc.
 
-The connection between characters written using those languages and what appears on the screen is undirect, governed by a program that interprets those commands. On the contrast, the notion of graphics is direct correspondence between the objects in memory and the images on the screen. For example, a Circle object is a circle on the screen.
+The connection between characters written using those languages and what appears on the screen is indirect, governed by a program that interprets those commands. On the contrast, the notion of graphics is direct correspondence between the objects in memory and the images on the screen. For example, a Circle object is a circle on the screen.
 
 The model is as follows: we create objects (such as a Square) from basic objects provided by a graphics system (such as a Line). We attach those graphics objects to a Window object. Then a program we can think of as “display engine” or as “GUI library” takes the objects attached to our window and draws them on the screen. The GUI library delegates most of its work to the OS.
 
@@ -370,10 +370,10 @@ We use a GUI library/toolkit called “FLTK” to support all operating systems,
     Our code -> Our interface library -> A graphics/GUI library (FLTK) -> The operating system -> Our screen.
 
 A _computer screen_ is a rectangular area composed of pixels.  
-A _pixle_ is a tiny spot that can be given a color.  
+A _pixel_ is a tiny spot that can be given a color.  
 A _Window_ is a rectangular region of a screen devoted to some specific purpose, and controlled by a program.  
 The area of a window that you can draw on is referred to as a _canvas,_ and sometimes as “the inside of a window.”  
-Some screens have bigger pixles than others.
+Some screens have bigger pixels than others.
 
 Line, Lines, Polygon, Axis, Rectangle, Text, and Image, all derive from Shape — directly or indirectly.
 Simple_window derive from Window.  
@@ -396,7 +396,7 @@ You can only change the access-level of non-constructors with `using-declaration
 std::vector has a default constructor, and a std::initializer_list constructor.  
 Vector_ref stores named and unnamed objects.
 
-The reason for restricting Text's string to be a single-line is to ensure portablity across systems. Don't try to put `\n` as it's undefined.
+The reason for restricting Text's string to be a single-line is to ensure portability across systems. Don't try to put `\n` as it's undefined.
 
 ## Graphics class design
 
@@ -437,7 +437,7 @@ You can get the compiler to check if a function overrides or not by using the `o
 
 If you want to become a language lawyer you need to study Stroustrup, The Design and Evolution of C++ and The C++ Programming Language, and the ISO C++ standard. We don't recommend becoming a language lawyer (someone knowing every little detail of the language definition); being a programmer (whatever you call someone who actually uses the language) is much more fun and typically much more useful to society.
 
-One way to make an abstract class is by making its constructors protected. Another, is by making _pure vertual functions_. A pure virtual function only adds `= 0;` to a virtual function declaration. A derived class must override all pure virtual functions or else it will become abstract too.
+One way to make an abstract class is by making its constructors protected. Another, is by making _pure virtual functions_. A pure virtual function only adds `= 0;` to a virtual function declaration. A derived class must override all pure virtual functions or else it will become abstract too.
 
 If a base of class D is private, its public and protected members can be used only by members of D.  
 If a base of class D is protected, its public and protected members can be used only by members of D, and members of classes derived from D.  
@@ -493,4 +493,4 @@ If you forget to name a local variable, the compiler will delete it, assuming th
 
 When code is managed by a GUI system, a thrown exception may never find a handler, because the GUI system or the operating system may be oblivious to C++ exceptions; that is, it could be “eaten.”
 
-GUI is a huge topic. Much of it has to do with style and compatibility with existing systems. Furthermore, much has to do with a bewildring varaity of widgets (such as a GUI library offering many dozens of alternative button styles) that would make traditional botanist feel quite at home. One thing you should be aware of is that most GUI systems provide a “GUI builder” that allows you to design your window layouts graphically and attach callbacks and actions to buttons, menus, etc. specified graphically. It's worth using to reduce the tedium of writing “scaffolding code.”
+GUI is a huge topic. Much of it has to do with style and compatibility with existing systems. Furthermore, much has to do with a bewildering variety of widgets (such as a GUI library offering many dozens of alternative button styles) that would make traditional botanist feel quite at home. One thing you should be aware of is that most GUI systems provide a “GUI builder” that allows you to design your window layouts graphically and attach callbacks and actions to buttons, menus, etc. specified graphically. It's worth using to reduce the tedium of writing “scaffolding code.”
