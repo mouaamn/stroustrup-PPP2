@@ -506,3 +506,10 @@ When you start a C++ program, the compiler sets aside memory for your code (call
 There are “smart pointers” in STL that compensate for the weaknesses of the low-level built-in pointers. Such as not knowing how many objects a pointer points to.
 
 Beware that compilers often have a “debug mode” where they by default initialize variables to a predictable value. Turning off the debug features to ship a program, to run an optimizer, or simply to compile on a different machine, a program may suddenly run differently, because of uninitialized variables.
+
+    int* p = nullptr; // C++11
+    int* p = NULL;
+    int* p = 0;
+
+A deleted memory isn't considered nullptr
+An uninitialized pointer isn't nullptr by default (~~unless you are in debug mode~~)
