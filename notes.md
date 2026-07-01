@@ -494,3 +494,6 @@ If you forget to name a local variable, the compiler will delete it, assuming th
 When code is managed by a GUI system, a thrown exception may never find a handler, because the GUI system or the operating system may be oblivious to C++ exceptions; that is, it could be “eaten.”
 
 GUI is a huge topic. Much of it has to do with style and compatibility with existing systems. Furthermore, much has to do with a bewildering variety of widgets (such as a GUI library offering many dozens of alternative button styles) that would make traditional botanist feel quite at home. One thing you should be aware of is that most GUI systems provide a “GUI builder” that allows you to design your window layouts graphically and attach callbacks and actions to buttons, menus, etc. specified graphically. It's worth using to reduce the tedium of writing “scaffolding code.”
+
+## Vector and free store
+
