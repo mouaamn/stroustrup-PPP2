@@ -498,3 +498,5 @@ GUI is a huge topic. Much of it has to do with style and compatibility with exis
 ## Vector and free store
 
 The C++ standard library is traditionally called _STL._ For instance, std::vector is called an “STL container.”
+
+The `*` operator is called the _contents of_ operator, or the _dereference_ operator.
