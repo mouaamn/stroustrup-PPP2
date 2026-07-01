@@ -511,5 +511,5 @@ Beware that compilers often have a “debug mode” where they by default initia
     int* p = NULL;
     int* p = 0;
 
-A deleted memory isn't considered `nullptr`
+A deleted memory isn't considered `nullptr`  
 An uninitialized pointer isn't `nullptr` by default (~~unless you are in debug mode~~)
