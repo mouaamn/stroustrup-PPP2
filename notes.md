@@ -500,3 +500,5 @@ GUI is a huge topic. Much of it has to do with style and compatibility with exis
 The C++ standard library is traditionally called _STL._ For instance, std::vector is called an “STL container.”
 
 The `*` operator is called the _contents of_ operator, or the _dereference_ operator.
+
+When you start a C++ program, the compiler sets aside memory for your code (called _code storage_ or _text storage_), and for the global variables you define (called _static storage_). It also sets aside memory to be used when you call functions (called _stack storage_ or _automatic storage_). The rest of computer's memory is free for other uses (called _free store_ or the _heap_) and is available through the `new` operator.
