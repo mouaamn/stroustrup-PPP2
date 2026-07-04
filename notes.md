@@ -518,3 +518,5 @@ The following is UB (undefined behavior):
 
     int* p{ new int[3] };
     delete p; // should been delete[];
+
+You can't `delete` twice, because the memory might have been “recycled” (owned by other program). Tho, that doesn't apply to null pointers. 
