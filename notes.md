@@ -513,3 +513,8 @@ Beware that compilers often have a “debug mode” where they by default initia
 
 A deleted memory isn't considered `nullptr`  
 An uninitialized pointer isn't `nullptr` by default (~~unless you are in debug mode~~)
+
+The following is UB (undefined behavior):
+
+    int* p{ new int[3] };
+    delete p; // should been delete[];
