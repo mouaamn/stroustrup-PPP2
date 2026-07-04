@@ -526,3 +526,8 @@ Why do we have to bother with freeing memory? Can't the compiler figure out when
 > Programmers consider leaks as a proof of sloppiness.
 
 Both the `.` and the `->` operators are called _member access operators._
+
+C++ offers two casts that are nastier than `static_cast`:
+
+- `reinterpret_cast<T>`
+- `const_cast<T*>` casts away `const`
