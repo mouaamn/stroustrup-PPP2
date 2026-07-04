@@ -519,4 +519,6 @@ The following is UB (undefined behavior):
     int* p{ new int[3] };
     delete p; // should been delete[];
 
-You can't `delete` twice, because the memory might have been “recycled” (owned by other program). Tho, that doesn't apply to null pointers. 
+You can't `delete` twice, because the memory might have been “recycled” (owned by other program). Tho, that doesn't apply to null pointers.
+
+Why do we have to bother with freeing memory? Can't the compiler figure out when we don't need a piece of memory anymore and just recylce it without human intervention? It can. That's called _automatic garbage collection_ or just _garbage collection. Unfortunatly, it isn't cost-free and ideal for all kinds of applications. You can plug one into your C++ program. [See](https://www.hboehm.info/gc/).
