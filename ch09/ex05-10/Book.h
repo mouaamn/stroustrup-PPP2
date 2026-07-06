@@ -1,5 +1,5 @@
-#ifndef LIBRARY
-#define LIBRARY
+#ifndef BOOK
+#define BOOK
 
 #include "std_lib_facilities.h"
 #include "Date.h"

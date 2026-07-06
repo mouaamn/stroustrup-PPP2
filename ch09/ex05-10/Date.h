@@ -1,5 +1,5 @@
-#ifndef CHRONO
-#define CHRONO
+#ifndef DATE
+#define DATE
 
 namespace Chrono {
 
