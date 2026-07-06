@@ -501,7 +501,7 @@ The C++ standard library is traditionally called _STL._ For instance, std::vecto
 
 The `*` operator is called the _contents of_ operator, or the _dereference_ operator.
 
-When you start a C++ program, the compiler sets aside memory for your code (called _code storage_ or _text storage_), and for the global variables you define (called _static storage_). It also sets aside memory to be used when you call functions (called _stack storage_ or _automatic storage_). The rest of computer's memory is free for other uses (called _free store_ or the _heap_) and is available through the `new` operator.
+When you start a typical program, the compiler sets aside memory for your code (called _code storage_ or _text storage_), and for the global variables you define (called _static storage_). It also sets aside memory to be used when you call functions (called _stack storage_ or _automatic storage_). The rest of computer's memory is free for other uses (called _free store_ or the _heap_) and is available through the `new` operator.
 
 There are “smart pointers” in STL that compensate for the weaknesses of the low-level built-in pointers. Such as not knowing how many objects a pointer points to.
 
