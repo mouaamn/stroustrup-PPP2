@@ -14,7 +14,7 @@ try {
 	constexpr size_t N_BYTES{ 1048576 }; // one MB
 	for (size_t n{}; ; n += N_BYTES) {
 		new char[N_BYTES];
-		std::cout << "Current (tried) allocated bytes: " << n << '\n';
+		cout << "Current (tried) allocated bytes: " << n << '\n';
 	}
 }
 catch (exception& e) {
