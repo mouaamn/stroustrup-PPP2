@@ -537,3 +537,8 @@ _Lists_ are among the most common and useful data structures. A list is made out
 ## Vectors and arrays
 
 We pass an `std::initializer_list<T>` by value, because it's simply a handle to elements allocated “elsewhere.”
+
+Copying could mean two things:
+
+- Shallow copy: copies only a pointer so that the two pointers now refer to the same object.
+- Deep copy: copies what a pointer points to so that the two pointers now refer to distinct objects.
