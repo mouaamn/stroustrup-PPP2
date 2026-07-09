@@ -544,3 +544,5 @@ Copying could mean two things:
 - Deep copy: copies what a pointer points to so that the two pointers now refer to distinct objects.
 
 Types that provide shallow copy (like pointers and references) are said to have _pointer semantics_ or _reference semantics_ (they copy addresses). Types that provide deep copy (like std::string and std::vector) are said to have _value semantics_ (they copy values pointed to).
+
+The funny `&&` notation is called an _rvalue reference._ We use it to define move operations.
