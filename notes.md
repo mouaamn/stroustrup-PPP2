@@ -548,3 +548,5 @@ Types that provide shallow copy (like pointers and references) are said to have 
 The funny `&&` notation is called an _rvalue reference._ We use it to define move operations.
 
 A constructor that takes a single argument defines a conversion from its arguemnt type to its class. Such “implicit conversions” can cause undesirable effects. You can suppress it using the `explicit` keyword.
+
+> It's a pity that constructors aren't explicit by default; if in doubt, make any constructor that can be invoked with a single argument explicit.
