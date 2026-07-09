@@ -533,3 +533,6 @@ C++ offers two casts that are nastier than `static_cast`:
 - `const_cast<T*>` casts away `const`
 
 _Lists_ are among the most common and useful data structures. A list is made out of “links” where each link holds some information and pointers to other links. The implementation of links is one of the classical uses of pointers. In a _doubly-linked list,_ a link points to a predecessor and a successor, but in a _singly-linked list_ it only points to a successor.
+
+## Vectors and arrays
+
