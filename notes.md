@@ -554,3 +554,4 @@ A constructor that takes a single argument defines a conversion from its arguemn
 The name of a C-style array decays to an rvalue pointer, pointing to the first element. The reason is to avoid accidentally passing large amounts of data by value.
 
 Only string literals are zero-terminated. So, something like `char arr[3]{ 'a', 'b', 'c' };` isn't zero-terminated, but `"abc"` is.  
+Zero-terminated strings are usually called “C-style strings.” Also, `'\0' == 0`.
