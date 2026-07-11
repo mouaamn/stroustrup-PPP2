@@ -550,3 +550,5 @@ The funny `&&` notation is called an _rvalue reference._ We use it to define mov
 A constructor that takes a single argument defines a conversion from its arguemnt type to its class. Such “implicit conversions” can cause undesirable effects. You can suppress it using the `explicit` keyword.
 
 > It's a pity that constructors aren't explicit by default; if in doubt, make any constructor that can be invoked with a single argument explicit.
+
+The name of a c-style array decays to an rvalue pointer, pointing to the first element. The reason is to avoid accidentally passing large amounts of data by value.
