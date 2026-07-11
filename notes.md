@@ -551,4 +551,4 @@ A constructor that takes a single argument defines a conversion from its arguemn
 
 > It's a pity that constructors aren't explicit by default; if in doubt, make any constructor that can be invoked with a single argument explicit.
 
-The name of a c-style array decays to an rvalue pointer, pointing to the first element. The reason is to avoid accidentally passing large amounts of data by value.
+The name of a C-style array decays to an rvalue pointer, pointing to the first element. The reason is to avoid accidentally passing large amounts of data by value.
