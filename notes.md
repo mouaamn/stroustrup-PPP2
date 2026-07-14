@@ -555,3 +555,5 @@ The name of a C-style array decays to an rvalue pointer, pointing to the first e
 
 Only string literals are zero-terminated. So, something like `char arr[3]{ 'a', 'b', 'c' };` isn't zero-terminated, but `"abc"` is.  
 Zero-terminated strings are usually called “C-style strings.” Also, `'\0' == 0`.
+
+“Caveat emptor!” is latin for “buyer beware.” It's a principle in commerce that the buyer alone is responsible for assessing the quality of purchase before buying. So, the seller could hide defects from the buyer, and one way to address this is to bind a warranty.
