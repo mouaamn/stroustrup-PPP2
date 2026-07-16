@@ -26,7 +26,7 @@ bool is_palindrome(const char* first, const char* last) {
 	for (const char* p{ first }; p != last; ++p, ++n);
 	char* s_copy{ new char[n] };
 	for (int i{}; i < n; ++i)
-		s_copy[i] = *(last - i);
+		*(s_copy + i) = *(last - i);
 
 	for (int i{}; i < n; ++i)
 		if (*(s_copy + i) != *(first + i)) {
