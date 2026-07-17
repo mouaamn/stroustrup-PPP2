@@ -568,4 +568,5 @@ Zero-terminated strings are usually called “C-style strings.” Also, `'\0' ==
 
 We rarely just use one `push_back()`. So, we can optimize our programs by anticipating such “repeated” changes in size. In fact, all std::vector implmentations keep track of both the number of elements and the amount of “free space” reserved for “future expansion.” Usually reffered to as _free space_ or just _space,_ and you can obtain it using `capacity()` or change it using `reserve()`. Note that `reserve()` never decreases allocation, and both `push_back()` and `resize()` use it internally.
 
-By convention, an assignment operator returns a reference to the object assigned to. The notation for that is `*this`.
+By convention, an assignment operator returns a reference to the object assigned to. The notation for that is `*this`.  
+We can check for self-assignmet like this `&arg == this`, and it can be a huge optimization.
