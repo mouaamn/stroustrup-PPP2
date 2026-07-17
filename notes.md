@@ -549,6 +549,8 @@ Copying could mean two things:
 
 Types that provide shallow copy (like pointers and references) are said to have _pointer semantics_ or _reference semantics_ (they copy addresses). Types that provide deep copy (like std::string and std::vector) are said to have _value semantics_ (they copy values pointed to).
 
+The copy operations the compiler defines by default do shallow copy.
+
 The funny `&&` notation is called an _rvalue reference._ We use it to define move operations.
 
 A constructor that takes a single argument defines a conversion from its arguemnt type to its class. Such “implicit conversions” can cause undesirable effects. You can suppress it using the `explicit` keyword.
