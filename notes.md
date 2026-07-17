@@ -565,3 +565,5 @@ Zero-terminated strings are usually called “C-style strings.” Also, `'\0' ==
 “Caveat emptor!” is latin for “buyer beware.” It's a principle in commerce that the buyer alone is responsible for assessing the quality of purchase before buying. So, the seller could hide defects from the buyer, and one way to address this is to bind a warranty.
 
 ## Vector, templates, and exceptions
+
+We rarely just use one `push_back()`. So, we can optimize our programs by anticipating such “repeated” changes in size. In fact, all std::vector implmentations keep track of both the number of elements and the amount of “free space” reserved for “future expansion.” Usually reffered to as _free space_ or just _space,_ and you can obtain it using `capacity()` or change it using `reserve()`. Note that `reserve()` never decreases allocation, and both `push_back()` and `resize()` use it internally.
