@@ -139,7 +139,7 @@ Here's a grammar:
 
 The last rule says that “a Number is a floating-point-literal.” The next-to-last rule says that “a Primary is a Number or a `'('` followed by an Expression followed by `')'`.”
 
-Could you articulate an explanation in sufficient detail and precisely enough for a computer to understand how you do `2+10/5`? _Grammar_ is the most powerful tool/notation for that.
+Could you articulate an explanation in sufficient detail and precisely enough for a computer to understand how you do `2+10/5`? Grammar is the most powerful tool/notation for that.
 
 ---
 
