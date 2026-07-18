@@ -539,7 +539,7 @@ _Lists_ are among the most common and useful data structures. A list is made out
 
 ## Vectors and arrays
 
-We pass an `std::initializer_list<T>` by value, because it's simply a handle to elements allocated “elsewhere.”
+We pass an std::initializer_list by value, because it's simply a handle to elements allocated “elsewhere.”
 
 Copying could mean two things:
 
