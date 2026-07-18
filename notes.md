@@ -6,7 +6,7 @@ An object’s type specifies what value can be stored in the object, and what op
 
 A _whitespace_ is a space, a newline, or a tab.
 
-A program is _type-safe_ when it uses types according to their rules.
+A program is _type-safe_ when it uses types according to their rules.  
 _Narrowing conversions_ happened when values, when converted, they lose data (e.g., float to int).
 
 We prefer _universal and uniform initialization `{}`,_ but we use `=` out of habit.
