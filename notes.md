@@ -352,7 +352,7 @@ When output doesn't fit on a field (it's considered an overflow), the ostream br
 
 What a stream associated to a file can do, depends on its modes (properties).
 
-When moving from character-oriented I/O to _binary I/O_, we give up our `<<` and `>>` operators, because they turn values into character sequences. We use `write()` and `read()` instead.
+When moving from character-oriented I/O to _binary I/O_, we give up our usual `<<` and `>>` operators, because they turn values into character sequences. We use `write()` and `read()` instead.
 
 Every file opened for reading has a _read/get position,_ and every file opened for writing has a _write/put position._  
 It's undefined to seek beyond the end of a file.
