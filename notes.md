@@ -117,7 +117,7 @@ First, we tokenize the input to be able to look at it in convenient ways. Then, 
 
 A _token_ is a sequence of characters that represent something we consider a unit.  
 _Tokenizing_ is reading characters and assembling them into tokens.  
-~The notion of _(name, value)_ pairs.
+~The notion of (name, value) pairs.
 
 A program that implements a grammar is called a _parser_ or a _syntax analyzer._
 
