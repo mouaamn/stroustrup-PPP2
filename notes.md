@@ -221,7 +221,7 @@ When a function is called, the language implementation sets aside a data structu
     ║Implementation stuff ║
     ╚═════════════════════╝
 
-each time we call a function, the “stack of activation records” or just called a “stack,” grows by one. It follows the rule “Last in, first out.” The “Implementation stuff” varies from implementation to implementation, but it basically has the information needed for a function to return to its caller or return a value to its caller.
+each time we call a function, the “stack of activation records” or just called the “stack,” grows by one. It follows the rule “Last in, first out.” The “Implementation stuff” varies from implementation to implementation, but it basically has the information needed for a function to return to its caller or return a value to its caller.
 
 A constexpr function may not have _side effects._  
 Destruction happens in the reverse order of construction.
