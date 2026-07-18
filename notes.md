@@ -484,7 +484,7 @@ A GUI system like FLTK (and the operating system) can be used by programs writte
         reference_to<Simple_window>(pw).next();
     }
 
-The Address type specifies an address of “something in memory.” We are so close to the hardware and don't get the usual help from the language, so we can't use C++ references here. The `reference_to<Simple_window>(pw)` casts the raw address to a `Simple_window&`.
+The `Address` type specifies an address of “something in memory.” We are so close to the hardware and don't get the usual help from the language, so we can't use C++ references here. The `reference_to<Simple_window>(pw)` casts the raw address to a `Simple_window&`.
 
 Yes, _widget_ really is a technical term. A more descriptive, but less evocative, name for a widget is a _control._ We use widgets to define forms of interactions (e.g., button) with a program through GUI. [See](https://learn.microsoft.com/en-us/windows/win32/controls/window-controls).
 
