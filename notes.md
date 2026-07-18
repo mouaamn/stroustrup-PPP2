@@ -242,7 +242,7 @@ The help from a type, comes in two forms:
 - Representation: the data that represents an object — called its “current state/value.”
 - Operations.
 
-C++ provides two kinds of UDTs: _classes_ and _enumerations._  
+C++ provides two kinds of UDTs: classes and enumerations.  
 If you think of something as a separate entity, it's likely that you should define a class to represent that “thing.” A class should always represent a concept; that is, it shouldn't be just a collection of data and functions.
 
 Usually, we think of a class as having an _interface_ plus an _implementation._ The users can access the interface directly, but the implementation indirectly through the interface. The interface is identified by the label `public:`, and the implementation by the label `private:`.  
