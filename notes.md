@@ -239,7 +239,7 @@ User defined types (UDTs) include the ones in the standard library, and the ones
 
 The help from a type, comes in two forms:
 
-- Representation: the data that represents an object — called its “current state/value.”
+- Representation: the data that represents an object — called its _current state/value._
 - Operations.
 
 C++ provides two kinds of UDTs: classes and enumerations.  
