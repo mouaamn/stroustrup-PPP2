@@ -376,7 +376,7 @@ The area of a window that you can draw on is referred to as a _canvas,_ and some
 Some screens have bigger pixels than others.
 
 Line, Lines, Polygon, Axis, Rectangle, Text, and Image, all derive from Shape — directly or indirectly. Simple_window derives from Window.  
-Shape is called a _base class_ for them, and they are called _derived classes._ For example, Shape is a “base” of Line.
+Shape is called a “base class” for them, and they are called “derived classes.” For example, Shape is a “base” of Line.
 
 A lot of the shapes in our modern world are rectangles, because it's the simplest shape to deal with. For example, it's easy to describe a rectangle, it's easy to tell whether a point is inside a rectangle or outside it, it's easy to get hardware to draw a rectangle of pixles fast. So, that's why rectangle UDTs are usually defined separately. Rectangles are special in that they are easy to draw.
 
