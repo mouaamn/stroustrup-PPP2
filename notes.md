@@ -79,7 +79,7 @@ If you try to index an element out of range, the standard container will throw a
 
 std::runtime_error, and std::out_of_range derive from std::exception.
 
-Narrowing is a logical error. To prevent it, we implement narrow_cast\<type>(value) which throws an exception if narrowing happens or returns the casted value otherwise. Or simply use `{}`.
+Narrowing is a logical error. To prevent it, we implement `narrow_cast<type>(value)` which throws an exception if narrowing happens or returns the casted value otherwise. Or simply use `{}`.
 
 _Debugging_ is the process of finding and removing bugs. It goes like this:
 
