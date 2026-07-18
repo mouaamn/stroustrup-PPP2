@@ -574,3 +574,4 @@ We can check for self-assignmet like this `&arg == this`, and it can be a huge o
 A _template_ is a mechanism that allows a programmer to use types as paramters (so a “type/template parameter” instead of an “int parameter”) for a class or a function. The compiler then generates a specific class or function when we later provide types as arguments.
 
 We call a class template a _type generator._  
+The process of generating types (classes) from a class template given template arguments is called _specialization_ or _template instantiation._ For example, `std::vector<double>` and `std::vector<int>` are said to be specializations of std::vector. 
