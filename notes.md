@@ -166,7 +166,7 @@ _Pseudo code_ describes the main logic of a program.
 
 ## Completing a program
 
-We made a _prototype_ of a calculator. Now that we have a prototype we can experiment, try out ideas, and come up with a better version.
+We made a prototype of a calculator. Now that we have a prototype we can experiment, try out ideas, and come up with a better version.
 
 When we have a program that “works.” We try feeding the program with as much input in the hope of making it misbehave; that is, we try finding errors before somebody else finds them.  
 There are people that break “things” for a living, called _testers._
