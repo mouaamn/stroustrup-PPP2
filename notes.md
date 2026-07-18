@@ -571,4 +571,4 @@ We rarely just use one `push_back()`. So, we can optimize our programs by antici
 By convention, an assignment operator returns a reference to the object assigned to. The notation for that is `*this`.  
 We can check for self-assignmet like this `&arg == this`, and it can be a huge optimization.
 
-A _template_ is a mechanism that allows a programmer to use types as paramters (so a “type parameter” instead of an “int parameter”) for a class or a function. The compiler then generates a specific class or function when we later provide types as arguments.
+A _template_ is a mechanism that allows a programmer to use types as paramters (so a “type/template parameter” instead of an “int parameter”) for a class or a function. The compiler then generates a specific class or function when we later provide types as arguments.
