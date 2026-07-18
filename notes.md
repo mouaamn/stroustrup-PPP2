@@ -408,7 +408,7 @@ A class that can be used to create objects; that is, the opposite of an abstract
 
 Note that “abstract” and “concrete” are simply technical words for everyday distinction. We might go to the store to buy a camera. However, we can't just ask for a camera and take it home. What brand of camera? Which particular model camera? The word “camera” is a generalization; it refers to an abstract notion. An Olympus E-M5 refers to a specific kind of camera, which we might acquire a particular instance of: a particular camera with a unique serial number. So “camera” is like an abstract (base) class; “Olympus E-M5” is much like a concrete (derived) class, and the actual camera in my hand would be much like an object.
 
-_Virtual functions_ is the ability to define a function in a base class, and have a function of the same name and type in a derived class called when a user calls the base class function. This is often called _run-time polymorphism,_ dynamic dispatch, or run-time dispatch, because the function called is determined at run-time.
+_Virtual functions_ is the ability to define a function in a base class, and have a function of the same name and type in a derived class called when a user calls the base class function. This is often called _run-time polymorphism,_ _dynamic dispatch,_ or _run-time dispatch,_ because the function called is determined at run-time.
 
 Circle consist of two parts: Shape and Circle. Imagine copying only the Shape part. That's called _slicing._ The Circle part is sliced off. That's why we disable copy operations for base classes. [See](https://pastebin.com/VwgDvMFR).
 
