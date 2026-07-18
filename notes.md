@@ -287,7 +287,7 @@ _Helper functions_ take arguments of the classes they are helper of. Helper func
 
 ## Input and output streams
 
-Most operating systems separate the detailed handling of I/O devices into _device drivers,_ and programs then access the device drivers through an I/O library that makes I/O from/to different sources appear as similar as possible.
+Most operating systems separate the detailed handling of I/O devices into device drivers, and programs then access the device drivers through an I/O library that makes I/O from/to different sources appear as similar as possible.
 
 Without device drivers we would have to directly address each kind of device on the market, in our programs.
 
