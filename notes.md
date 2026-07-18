@@ -293,7 +293,7 @@ Without device drivers we would have to directly address each kind of device on 
 
     input device -> device driver -> input library -> our program -> output library -> device driver -> output device
 
-With a model like this, input and output can be seen as streams of bytes handled by the input/output library.
+with a model like this, input and output can be seen as streams of bytes handled by the input/output library.
 
 An _ostream_ turns values of various types into a sequence of characters. Then sends it somewhere, and that “somewhere” could be a file, a console, the main memory, or another computer.
 
