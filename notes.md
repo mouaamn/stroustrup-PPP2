@@ -467,7 +467,7 @@ Adjacent string literals such as `"Mouaamn's unclear " "destiny."` get concatena
 
 ## Graphical user interfaces
 
-Every program has a user interface. For example, a calculator's UI is its buttons and screen. For a user like you who has a monitor, a keyboard, and a pointing device, the interface can be of three:
+Consider a physical calculator, its UI is its buttons and screen. For a user like you who has a monitor, a keyboard, and a pointing device, the interface of a program can be of three:
 
 - console user interface (CUI): iostreams.
 - graphical user interface (GUI): Win32, FLTK.
