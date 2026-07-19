@@ -579,3 +579,5 @@ Template instantiation is horrendously complicated, but that complexity is in th
 Template instantiation takes place at compile-time or link-time, not at run-time.
 
 Instead of writing `template<typename T>` you can write `template<class T>`. They mean the same thing, but people prefer `typename`, “because it's clearer,” and “nobody confuses `typename` thinking it only allows UDTs as template arguments.” We are of the opinion that `class` already means type, so it makes no difference. Also, `class` is shorter.
+
+The simplest definition of _generic programming_ in C++ is “using templates.” That definition is a bit too simpleminded, tho. We shouldn't define fundamental programming concepts in terms of programming language features. We think that the most useful simple definition is: writing code that works with a variety of types presented as arguments, as long as those argument types meet specifc syntactic and semantic requirements. For example, the type of a std::vector must support copy operations.
