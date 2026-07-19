@@ -415,7 +415,7 @@ Circle consist of two parts: Shape and Circle. Imagine copying only the Shape pa
 _Derivation_ is away to build one class from another so that the new class can be used in the place of the original. This is often called _inheritance,_ because the derived class (also called “subclass”) inherits all the members of its base (also called “superclass”).
 
 Inheritance, run-time polymorphism, and encapsulation is the most common definition of object-orinted programming.  
-C++ supports other programming styles other than OOP such a as _generic programming._  
+C++ supports other programming styles other than OOP such a as generic programming.  
 C++ borrowed its key mechanisms from Simula67 ([67](https://www.youtube.com/watch?v=L7ejl_Hj3A8)), the first language to directly support OOP.
 
 One more piece of data is added to an object of a class with virtual functions: a pointer called `vptr` pointing to an address of a static `vtbl` that contains the virtual functions. For example, a Circle inherits from Shape which has 2 virtual functions, and then it overrides one. So the `vtbl` would look like this:
