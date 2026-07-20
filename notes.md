@@ -592,3 +592,5 @@ Some C++14 compilers support concepts (the `requires` keyword and some predicate
 
     template<typename T> // requires Element<T>()
     class vector{ //... };
+
+For a function template, the compiler can deduce template arguments from function arguments.
