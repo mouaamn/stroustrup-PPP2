@@ -583,3 +583,5 @@ Instead of writing `template<typename T>` you can write `template<class T>`. The
 The simplest definition of _generic programming_ in C++ is “using templates.” That definition is a bit too simpleminded, tho. We shouldn't define fundamental programming concepts in terms of programming language features. We think that the most useful simple definition is: writing code that works with a variety of types presented as arguments, as long as those argument types meet specifc syntactic and semantic requirements. For example, the type of a std::vector must support copy operations.
 
 When what we parameterize is a class, we get a _class template,_ what often called a _parameterized type_ or a _parameterized class._ When what we parameterize is a function, we get a _template function,_ what often called a _parameterized function_ and sometimes also called an “algorithm.” Thus, generic programming is sometimes reffered to as “algorithm-oriented programming”; the focus is more on the algorithms than the data types they use.
+
+“Polymorphism” is a greek word for “many shapes,” reffering to the many different types you can manipulate through a common interface.  
