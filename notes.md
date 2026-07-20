@@ -587,7 +587,7 @@ When what we parameterize is a class, we get a _class template,_ what often call
 “Polymorphism” is a greek word for “many shapes,” reffering to the many different types you can manipulate through a common interface.  
 This form of generic programming relying on explicit template parameters is called _parametric polymorphism._ In contrast, the polymorphism you get from using class hierarchies and virtual functions is called _ad hoc polymorphism._ The reason that both are called “polymorphism” is that each relies on the programmer to present the many versions of the concept by a single interface.
 
-A _concept_ is a set of requirments on a template argument.
+A _concept_ is a set of requirments on a template argument.  
 Some C++14 compilers support concepts (the `requires` keyword and some predicate functions) as an extension, but mine here MSVC doesn't. So, I should specify my requirements in comments instead:
 
     template<typename T> // requires Element<T>()
