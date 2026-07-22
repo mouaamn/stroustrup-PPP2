@@ -594,3 +594,5 @@ Some C++14 compilers support concepts (the `requires` keyword and some predicate
     class vector{ //... };
 
 For a function template, the compiler can deduce template arguments from function arguments.
+
+`std::allocator.destroy()` and `std::allocator.construct()` were deprecated in C++17 and removed in C++20.
