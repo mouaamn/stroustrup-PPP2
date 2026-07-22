@@ -602,4 +602,4 @@ For a function template, the compiler can deduce template arguments from functio
 - Efficiency: `[]` is faster due to being unchecked.
 - Constrains: exceptions may not be acceptable in some enviroments.
 
-In std_lib_facilities.h there's `Vector` that inherits from std::vector, but abstracts `[]` operators to do range checking. There's also the nasty `#define vector Vector` macro. That means whenever you write `vector` the compiler sees `Vector.` The same thing with `String` and std::string. Mind blowing!
+In std_lib_facilities.h there's `Vector` that inherits from std::vector, but abstracts `[]` operators to do range checking. There's also the nasty `#define vector Vector` macro. That means whenever you write `vector` the compiler sees `Vector`. The same thing with `String` and std::string. Mind blowing!
