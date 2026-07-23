@@ -611,6 +611,6 @@ You can re-throw in a catch-block using just `throw;`.
 
 Types of guarantees:
 
-- Basic Guarantee: [see](https://pastebin.com/2zhiVBru): all standard library code provides basic guarantee.
-- Strong Guarantee: basic guarantee + no side effects. It is the ideal.
+- Basic Guarantee: [see](https://pastebin.com/2zhiVBru): all standard library code provides the basic guarantee.
+- Strong Guarantee: the basic guarantee + no side effects. It is the ideal.
 - No-throw Guarantee
