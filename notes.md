@@ -614,3 +614,6 @@ Types of guarantees:
 - The Basic Guarantee: [see](https://pastebin.com/2zhiVBru): all standard library code provides the basic guarantee.
 - The Strong Guarantee: the basic guarantee + no side effects. It is the ideal.
 - The No-throw Guarantee
+
+Instead of a guarantee, we could use the RAII technique by using for example something like std::unique_ptr.  
+You should prefer RAII over the guarantees, because try-catch blocks make the code ugly.
