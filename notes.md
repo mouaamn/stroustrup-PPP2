@@ -603,3 +603,5 @@ For a function template, the compiler can deduce template arguments from functio
 - Constrains: exceptions may not be acceptable in some enviroments.
 
 In std_lib_facilities.h there's `Vector` that inherits from std::vector, but abstracts `[]` operators to do range checking. There's also the nasty `#define vector Vector` macro. That means whenever you write `vector` the compiler sees `Vector`. The same thing with `String` and std::string. Mind blowing!
+
+We call an object such as a std::vector, that is responsible for releasing a resource, the _owner_ or a _handle_ of the resource.
