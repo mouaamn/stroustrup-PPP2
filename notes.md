@@ -606,3 +606,5 @@ In std_lib_facilities.h there's `Vector` that inherits from std::vector, but abs
 
 We call an object such as a std::vector, that is responsible for releasing a resource, the _owner_ or a _handle_ of the resource.  
 Allocating in the constructor and deallocating in the destructor is reffered to by the awkward phrase “Resource Acquisition Is Initialization” (RAII).
+
+You can re-throw in a catch-block using just `throw;`.
