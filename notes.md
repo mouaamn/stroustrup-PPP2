@@ -608,3 +608,9 @@ We call an object such as a std::vector, that is responsible for releasing a res
 Allocating in the constructor and deallocating in the destructor is reffered to by the awkward phrase “Resource Acquisition Is Initialization” (RAII).
 
 You can re-throw in a catch-block using just `throw;`.
+
+Types of guarantees:
+
+- Basic Guarantee: [see](https://pastebin.com/2zhiVBru). All standard library code provides basic guarantee.
+- Strong Guarantee: basic guarantee + no side effects. It is the ideal.
+- No-throw Guarantee
