@@ -615,7 +615,7 @@ Types of guarantees:
 - The Strong Guarantee: the basic guarantee + no side effects. It is the ideal.
 - The No-throw Guarantee
 
-Instead of a guarantee, we could use the RAII technique by using for example something like std::unique_ptr, or creating our own UDT that uses RAII.  
+Instead of a guarantee, we could use the RAII technique. By using something like std::unique_ptr, or creating our own UDT that uses RAII.  
 You should prefer RAII over the guarantees, because try-catch-blocks make the code ugly.
 
 Assigning two std::unique_ptr to the same object is disallowed to prevent confusion. If you really need to tho, you can use std::shared_ptr.
