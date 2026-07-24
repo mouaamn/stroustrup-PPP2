@@ -576,7 +576,7 @@ We call a class template a _type generator._
 The process of generating types (classes) from a class template given template arguments is called _specialization_ or _template instantiation._ For example, `std::vector<double>` and `std::vector<int>` are said to be specializations of std::vector. 
 
 Template instantiation is horrendously complicated, but that complexity is in the domain of the compiler writer, not the template user.  
-Template instantiation takes place at compile-time or link-time, not at run-time.
+Template instantiation takes place at compile-time or link-time.
 
 Instead of writing `template<typename T>` you can write `template<class T>`. They mean the same thing, but people prefer `typename`, “because it's clearer,” and “nobody confuses `typename` thinking it only allows UDTs as template arguments.” We are of the opinion that `class` already means type, so it makes no difference. Also, `class` is shorter.
 
