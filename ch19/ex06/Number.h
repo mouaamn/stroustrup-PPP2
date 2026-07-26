@@ -5,7 +5,7 @@
 
 namespace DT {
 
-	template<typename T>
+	template<typename T> // requires Number<T>()
 	class Number {
 	public:
 		Number();
