@@ -7,7 +7,7 @@ void f(vector<T>& v1, const vector<T>& v2) {
 }
 
 template<typename T, typename U>
-double ff(vector<T> vt, vector<U> vu) {
+double ff(const vector<T>& vt, const vector<U>& vu) {
 	double sum{};
 	for (size_t i{}; i < vt.size() && i < vu.size(); ++i)
 		sum += vt[i] * vu[i];
