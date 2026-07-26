@@ -27,22 +27,22 @@ namespace DT {
 		return value_;
 	}
 
-	int operator+(const Int& l, const Int& r) {
-		return l.get() + r.get();
+	Int operator+(const Int& l, const Int& r) {
+		return Int{ l.get() + r.get() };
 	}
 
-	int operator-(const Int& l, const Int& r) {
-		return l.get() - r.get();
+	Int operator-(const Int& l, const Int& r) {
+		return Int{ l.get() - r.get() };
 	}
 
-	int operator*(const Int& l, const Int& r) {
-		return l.get() * r.get();
+	Int operator*(const Int& l, const Int& r) {
+		return Int{ l.get() * r.get() };
 	}
 
-	int operator/(const Int& l, const Int& r) {
+	Int operator/(const Int& l, const Int& r) {
 		if (r.get() == 0)
 			error("Division by zero");
-		return l.get() / r.get();
+		return Int{ l.get() / r.get() };
 	}
 
 	ostream& operator<<(ostream& os, const Int& i) {

@@ -19,10 +19,10 @@ namespace DT {
 		int value_;
 	};
 
-	int operator+(const Int& l, const Int& r);
-	int operator-(const Int& l, const Int& r);
-	int operator*(const Int& l, const Int& r);
-	int operator/(const Int& l, const Int& r);
+	Int operator+(const Int& l, const Int& r);
+	Int operator-(const Int& l, const Int& r);
+	Int operator*(const Int& l, const Int& r);
+	Int operator/(const Int& l, const Int& r);
 
 	ostream& operator<<(ostream& os, const Int& i);
 	istream& operator>>(istream& is, Int& i);
