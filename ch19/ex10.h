@@ -50,7 +50,7 @@ namespace DT {
 	template<typename T, typename Deleter>
 	Unique_ptr<T, Deleter>::Unique_ptr(Unique_ptr&& arg)
 		: p_{ arg.p_ },
-		deleter_{ move(arg.deleter_) }
+		deleter_{ arg.deleter_ }
 	{
 		arg.p_ = nullptr;
 	}
