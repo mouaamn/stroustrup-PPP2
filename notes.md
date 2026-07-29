@@ -624,3 +624,5 @@ std::unique_ptr's default deleter uses `delete` instead of `std::allocator.deall
 Providing hints is difficult when working with templates, because types can be anything.
 
 ## Containers and iterators
+
+The STL is only the parameterized (specialized) part of the ISO C++ standard library. It privides containers, algorithms, etc.  
