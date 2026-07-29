@@ -620,3 +620,5 @@ You should prefer RAII over the guarantees, because try-catch-blocks make the co
 
 Assigning two std::unique_ptr to the same object is disallowed to prevent confusion. If you really need to tho, you can use std::shared_ptr.  
 std::unique_ptr's default deleter uses `delete` instead of `std::allocator.deallocate`. Which can be UB if what it stores is acquired using `std::allocator.allocate`.
+
+Providing hints is difficult when working with templates, because types can be anything.
