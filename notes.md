@@ -630,4 +630,5 @@ You can refer to std::vector as being part of both “the STL” and “the stan
 
 The STL was designed by Alex Stepanov to provide a framework for general, correct, and efficient algorithms operating on data structures. The ideal was simplicity, generality, and elegance of mathematics.
 
-The centeral concept of the STL is the “sequence.” From the STL point of view, a collection of data is a sequence. A sequence has a begining and an end. We identify the begining and the end of a sequence by a pair of iterators. An _iterator_ is an object that identifies an element of a sequence.
+The centeral concept of the STL is the “sequence.” From the STL point of view, a collection of data is a sequence. A sequence has a begining and an end. We identify the begining and the end of a sequence by a pair of iterators. An _iterator_ is an object that identifies an element of a sequence.  
+Iterators don't allow subscripting.
