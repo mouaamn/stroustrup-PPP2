@@ -7,7 +7,7 @@ An object’s type specifies what value can be stored in the object, and what op
 A _whitespace_ is a space, a newline, or a tab.
 
 A program is _type-safe_ when it uses types according to their rules.  
-_Narrowing conversions_ happened when values, when converted, they lose data (e.g., float to int).
+_Narrowing conversions_ happen when values, when converted, they lose data (e.g., float to int).
 
 We prefer _universal and uniform initialization `{}`,_ but we use `=` out of habit.
 
@@ -15,7 +15,7 @@ We prefer _universal and uniform initialization `{}`,_ but we use `=` out of hab
 
 _Computation_ is taking input(s) and giving output(s) based on the input(s).
 
-> All that a program ever does it to compute.
+> All that a program ever does is to compute.
 
 When we say “input/output” we usually mean input/output to/from a program, but it could be to/from parts of a program (functions).
 
@@ -52,7 +52,7 @@ A _compound-statement/block_ is a sequence of statements delimited by curly-brac
 A _vector_ is a sequence of elements accessed by an index.
 
 A _function_ is a named sequence of statements.  
-If a computation is a worthy of a name, it should be a function.  
+If a computation is worthy of a name, it should be a function.  
 Every function should do a single logical action.  
 Functions should reflect the structure of a program, and describe the logically separate parts.
 
@@ -63,7 +63,7 @@ range-for-statements are only used to iterate over a sequence in order. For more
 Compile-time errors:
 
 - Syntax errors: not well formed to language grammar.
-- Type errors: mismatch between variables, and assigned values (arguments, initializirs, etc.).
+- Type errors: mismatch between variables, and assigned values (arguments, initializers, etc.).
 
 Link-time errors: ODR, missing definitions, etc.
 
@@ -73,7 +73,7 @@ Run-time errors: errors found by a running program; that running program could b
 
 The callee should detect and report run-time errors, unless there's a reason not to. Such as if the definition is inaccessible.
 
-After detecting a run-time error, how should you report it? You could return an error code (that's what Win32 does), but that has its downfalls. Such as what if you can't find a value that indicates an error code, that now both the callee and the caller need to check, or what if the caller forgets to check? Instead, C++ provide a mechanism for handling errors, called _exceptions._ The callee throws an exception and the a direct or indirect caller catches the exception if interested.
+After detecting a run-time error, how should you report it? You could return an error code (that's what Win32 does), but that has its downfalls. Such as what if you can't find a value that indicates an error code, that now both the callee and the caller need to check, or what if the caller forgets to check? Instead, C++ provides a mechanism for handling errors, called _exceptions._ The callee throws an exception and a direct or indirect caller catches the exception if interested.
 
 If you try to index an element out of range, the standard container will throw an exception of type std::out_of_range. This error is so famous that it has several names: _off-by_one error,_ _range error,_ and _bounds error._ 
 
@@ -95,9 +95,9 @@ The term “bug” is claimed to be originated from old computers where bugs use
 
 For pre/post conditions refer to [this](https://x.com/mouaamn/status/2019974423160451238).
 
-Imagine your daughter have written a program that computes the area of a rectangle. You run it, and get `-6`. You just know that's wrong. Why? Because no shape has a negative area. So, she fixes the bug, and gets `6`. Now that just might be right. The point here is that unless we have some idea of what a correct answer will be like, we have no clue whether the result is plausible.
+Imagine your daughter has written a program that computes the area of a rectangle. You run it, and get `-6`. You just know that's wrong. Why? Because no shape has a negative area. So, she fixes the bug, and gets `6`. Now that just might be right. The point here is that unless we have some idea of what a correct answer will be like, we have no clue whether the result is plausible.
 
-> What we must do before making fools of our selves by delivering a program that produces ridiculous results is just to check that the answer is plausible.
+> What we must do before making fools of ourselves by delivering a program that produces ridiculous results is just to check that the answer is plausible.
 
 _Estimation_ is a noble art that combines common sense and some arithmetic applied to a few facts.  
 _Guesstimation_ combines guessing with a bit of calculation.  
@@ -115,7 +115,7 @@ In this chapter we write a calculator. Writing one requires experience, a mentor
 
 First, we tokenize the input to be able to look at it in convenient ways. Then, we write a _grammar_ to teach the program how to understand the input. For example, `2+10/5` is `2+(10/5)` and not `(2+10)/5`. Then, a program that implements the rules of that grammar.
 
-A _token_ is a sequence of characters that represent something we consider a unit.  
+A _token_ is a sequence of characters that represents something we consider a unit.  
 _Tokenizing_ is reading characters and assembling them into tokens.  
 ~The notion of (name, value) pairs.
 
@@ -145,19 +145,19 @@ Could you articulate an explanation in sufficient detail and precisely enough fo
 
 When you work on a problem you repeatedly go through these stages:
 
-- Analysis: Figure out what should be done and write a description of your understanding of the problem. Such description is called a _set of requirements_ or _specification._
+- Analysis: Figure out what should be done and write a description of your understanding of the problem. Such a description is called a _set of requirements_ or _specification._
 - Design: Create an overall structure for the system, deciding which parts the implementation should have, how these parts should communicate.
 - Implementation: Write the code, debug it, and test it.
 
 Here are some suggestions for problem solving: 
 
 - Given specification.
-  - Is it clear? Don't be a future creep, and ask too much.
+  - Is it clear? Don't be a feature creep, and ask too much.
   - Does it sound manageable given the time, skills, and tools available? There's a little point in starting a project you couldn't possibly complete.
 - Try breaking the problem into manageable parts.
   - Do you know of any tools, libraries, etc. that might help?
   - Look for parts of the program that can be separately described.
-- Build a small initial version the solves the key part of the problem _(prototype)._
+- Build a small initial version that solves the key part of the problem _(prototype)._
 - Build a full solution by using parts of the prototype.
 
 _Pseudo code_ describes the main logic of a program.
@@ -173,7 +173,7 @@ There are people that break “things” for a living, called _testers._
 
 The `%` operator works only on integers, because it doesn't want to duplicate fmod. The fmod function is defined as `x-y*int(x/y)`.
 
-Even the “prompt” and the “result indicator” are considerd magic-constants.
+Even the “prompt” and the “result indicator” are considered magic-constants.
 
 > Code that is hard to read is where bugs can easily hide.
 
@@ -181,7 +181,7 @@ Even the “prompt” and the “result indicator” are considerd magic-constan
 
 The mechanism for storing (name, value) pairs is called _symbol table,_ and it's best done using std::map.
 
-As it happens, we have now seen a simple example of how a compiler works. The calculator analyzes input broken down into tokens and understood according to a grammar. That's exactly with a compiler does. After analyzing its input, the compiler then produces a representation (object code) that we can later execute. The calculator immediately executes the expressions it has analyzed; programs that do that are called interpreters rather than compilers.
+As it happens, we have now seen a simple example of how a compiler works. The calculator analyzes input broken down into tokens and understood according to a grammar. That's exactly what a compiler does. After analyzing its input, the compiler then produces a representation (object code) that we can later execute. The calculator immediately executes the expressions it has analyzed; programs that do that are called interpreters rather than compilers.
 
 ## Technicalities: functions, etc.
 
@@ -194,12 +194,12 @@ A _declaration_ is a statement that introduces a name into a scope.
   - Specifying a type for what is named (e.g., a function or a variable).
   - Optionally, specifying an initializer (e.g., an initializer value or a function body).
 
-Examples include: `int a = 5;`, `extern int b;` `int foo(int);`.
+Examples include: `int a = 5;`, `extern int b;`, `int foo(int);`.
 
 A declaration that fully specifies the entity declared is called a _definition._  
-Examples include: `int a = 5;`, `int b;` `int foo(int n){ return 3*n; };`.
+Examples include: `int a = 5;`, `int b;`, `int foo(int n){ return 3*n; };`.
 
-A definition specifies exactly what a name refers to. For example, a definition of a variable supplies the object (the memory). A definition of a function supplies the function body (the excutable statements). So, you can't define twice, but you can declare twice or more.
+A definition specifies exactly what a name refers to. For example, a definition of a variable supplies the object (the memory). A definition of a function supplies the function body (the executable statements). So, you can't define twice, but you can declare twice or more.
 
 Built-in types don't have _default-constructors,_ but UDTs do. Tho, global variables are default initialized to `0`.  
 A _header_ is a collection of declarations. When those declarations are alone in a file. We call it a _header file._
@@ -229,7 +229,7 @@ Destruction happens in the reverse order of construction.
 A name composed of a namespace (or a class name) and a member-name combined using `::`, is called a _fully qualified name._ This doing is called “qualification.”
 
     using std::string; // a using declaration
-    using namespace std; // a using diractive
+    using namespace std; // a using directive
 
 ## Technicalities: classes, etc.
 
@@ -254,7 +254,7 @@ In C++98, people used `()` to delimit an initializer list.
 Member functions can't be forgotten or overlooked, especially constructors.  
 The `: y{ yy }, m{ mm }, d{ dd }` is called a _member initializer list._
 
-We desgin our types so that values/states are guaranteed to be valid. The notion of a _valid value (or state)_ of an object.  
+We design our types so that values/states are guaranteed to be valid. The notion of a _valid value (or state)_ of an object.  
 What constitutes a valid value is called an _invariant._  
 What does it mean for a value to be valid (what is the invariant)?  
 If you can't think of an invariant, you are probably dealing with plain data. If so, use a struct.
@@ -283,7 +283,7 @@ A const object can only call const member functions, because they promise to not
 
 Keep interfaces minimal (though complete), because a small interface is easier to learn and comprehend. A member function that can be implemented as a free-standing, helper function, should be implemented as so. Note: not letting a lot of access to a representation is important.
 
-_Helper functions_ take arguments of the classes they are helper of. Helper functions are also called _convenience functions_ and _auxiliary functions._ Helper functions are a design concept.
+_Helper functions_ take arguments of the classes they are helpers of. Helper functions are also called _convenience functions_ and _auxiliary functions._ Helper functions are a design concept.
 
 ## Input and output streams
 
@@ -301,7 +301,7 @@ An _istream_ composes values of various types from a sequence of characters. It 
 
 Input and output are first stored in a _buffer_ — it's like a staging phase.
 
-With an istream, the buffering can be quite visible to the user. When you use an istream that is attached to a keyboard, what you type is left into the buffer, and you can use “backspace” to change your mind, until you hit enter.
+With an istream, the buffering can be quite visible to the user. When you use an istream that is attached to a keyboard, what you type is left in the buffer, and you can use “backspace” to change your mind, until you hit enter.
 
 A _file_ is simply a sequence of bytes numbered from 0 and upward.  
 A file has a _format;_ that is, it has a set of rules that determine what the bytes mean. For example, if we have a text file, the first 4 bytes will be the first four characters.
@@ -321,7 +321,7 @@ The reasons for input operations failing are limitless, but the std::istream lim
 If an input operation encounters a simple format error, it lets the stream `fail()`, assuming that you might be able to recover, or throws an exception if there's no chance of recovery. On the other hand, if something really nasty happens, such as a bad disk read, the input operation lets the stream go `bad()`.  
 If the stream is bad it's also fail.
 
-The main design problem with overloading output operators is that different people might prefer the output look different.
+The main design problem with overloading output operators is that different people might prefer the output to look different.
 
     cout << 2 << 4; // means: operator<<(operator<<(cout, 2), 4);
 
@@ -333,7 +333,7 @@ File formats are often peculiar, and we don't always have the freedom to choose 
 
 As programmers we, prefer _regularity;_ treating all objects and input sources equivalently, and imposing a single standard on how to represent objects entering and exiting the system give the cleanest, simplest, most maintainable, and often the most efficient code.
 
-Hexadecimal is popular for outputting hardware related information. The reason is that a hexadecimal digit exactly represents a `4` bit value. Thus, two represent a byte, four represent two bytes (half a word), and eight represent four bytes (a word or a rigster). When C was first designed, octal was popular, but now it's rarely used.
+Hexadecimal is popular for outputting hardware related information. The reason is that a hexadecimal digit exactly represents a `4` bit value. Thus, two represent a byte, four represent two bytes (half a word), and eight represent four bytes (a word or a register). When C was first designed, octal was popular, but now it's rarely used.
 
 The “tab” character stands for “tabulation character.”
 
@@ -342,7 +342,7 @@ std::hex, std::dec, std::oct, std::showbase, std::noshowbase are called _manipul
 Seeing a value without a base can be confusing. For example, the decimal `11` is `13` in octal.  
 Decimals don't have a base, hexadecimals have `0x` or `0X`, and octals have `0`.
 
-std::defaultfloat chooses between std::fixed, and std::scientific based who gives the most accurate representation.  
+std::defaultfloat chooses between std::fixed, and std::scientific based on who gives the most accurate representation.  
 _Precision_ is `6` by default, and its meaning depends:
 
 - defaultfloat: precision is the total number of digits.
@@ -378,7 +378,7 @@ Some screens have bigger pixels than others.
 Line, Lines, Polygon, Axis, Rectangle, Text, and Image, all derive from Shape — directly or indirectly. Simple_window derives from Window.  
 Shape is called a “base class” for them, and they are called “derived classes.” For example, Shape is a “base” of Line.
 
-A lot of the shapes in our modern world are rectangles, because it's the simplest shape to deal with. For example, it's easy to describe a rectangle, it's easy to tell whether a point is inside a rectangle or outside it, it's easy to get hardware to draw a rectangle of pixles fast. So, that's why rectangle UDTs are usually defined separately. Rectangles are special in that they are easy to draw.
+A lot of the shapes in our modern world are rectangles, because it's the simplest shape to deal with. For example, it's easy to describe a rectangle, it's easy to tell whether a point is inside a rectangle or outside it, it's easy to get hardware to draw a rectangle of pixels fast. So, that's why rectangle UDTs are usually defined separately. Rectangles are special in that they are easy to draw.
 
 Making a rectangle by placing points in the right places isn't enough to make a rectangle. For example, a Polygon doesn't represent a Rectangle in memory — adding a fifth point proves it. The same thing applies to making a Polygon using a Closed_polyline — adding a point that makes an intersectional line proves it. And the same thing applies to making a circle using an ellipse by making `major = minor` — changing either proves it.
 
@@ -410,11 +410,11 @@ Note that “abstract” and “concrete” are simply technical words for every
 
 _Virtual functions_ is the ability to define a function in a base class, and have a function of the same name and type in a derived class called when a user calls the base class function. This is often called _run-time polymorphism,_ _dynamic dispatch,_ or _run-time dispatch,_ because the function called is determined at run-time.
 
-Circle consist of two parts: Shape and Circle. Imagine copying only the Shape part. That's called _slicing._ The Circle part is sliced off. That's why we disable copy operations for base classes. [See](https://pastebin.com/VwgDvMFR).
+Circle consists of two parts: Shape and Circle. Imagine copying only the Shape part. That's called _slicing._ The Circle part is sliced off. That's why we disable copy operations for base classes. [See](https://pastebin.com/VwgDvMFR).
 
-_Derivation_ is away to build one class from another so that the new class can be used in the place of the original. This is often called _inheritance,_ because the derived class (also called “subclass”) inherits all the members of its base (also called “superclass”).
+_Derivation_ is a way to build one class from another so that the new class can be used in the place of the original. This is often called _inheritance,_ because the derived class (also called “subclass”) inherits all the members of its base (also called “superclass”).
 
-Inheritance, run-time polymorphism, and encapsulation is the most common definition of object-orinted programming.  
+Inheritance, run-time polymorphism, and encapsulation is the most common definition of object-oriented programming.  
 C++ supports other programming styles other than OOP such a as generic programming.  
 C++ borrowed its key mechanisms from Simula67 ([67](https://www.youtube.com/watch?v=L7ejl_Hj3A8)), the first language to directly support OOP.
 
@@ -492,7 +492,7 @@ If you forget to name a local variable, the compiler will delete it, assuming th
 
 When code is managed by a GUI system, a thrown exception may never find a handler, because the GUI system or the operating system may be oblivious to C++ exceptions; that is, it could be “eaten.”
 
-GUI is a huge topic. Much of it has to do with style and compatibility with existing systems. Furthermore, much has to do with a bewildering variety of widgets (such as a GUI library offering many dozens of alternative button styles) that would make traditional botanist feel quite at home. One thing you should be aware of is that most GUI systems provide a “GUI builder” that allows you to design your window layouts graphically and attach callbacks and actions to buttons, menus, etc. specified graphically. It's worth using to reduce the tedium of writing “scaffolding code.”
+GUI is a huge topic. Much of it has to do with style and compatibility with existing systems. Furthermore, much has to do with a bewildering variety of widgets (such as a GUI library offering many dozens of alternative button styles) that would make a traditional botanist feel quite at home. One thing you should be aware of is that most GUI systems provide a “GUI builder” that allows you to design your window layouts graphically and attach callbacks and actions to buttons, menus, etc. specified graphically. It's worth using to reduce the tedium of writing “scaffolding code.”
 
 ## Vector and free store
 
@@ -524,7 +524,7 @@ The following are UB (undefined behavior):
 
 You can't `delete` twice, because the _free store manager_ may have “recycled” the memory. Tho, that doesn't apply to null pointers.
 
-Why do we have to bother with freeing memory? Can't the compiler figure out when we don't need a piece of memory anymore and just recylce it without human intervention? It can. That's called _automatic garbage collection_ or just _garbage collection._ Unfortunatly, it isn't cost-free and ideal for all kinds of applications. You can plug one into your C++ program. [See](https://www.hboehm.info/gc/).
+Why do we have to bother with freeing memory? Can't the compiler figure out when we don't need a piece of memory anymore and just recycle it without human intervention? It can. That's called _automatic garbage collection_ or just _garbage collection._ Unfortunately, it isn't cost-free and ideal for all kinds of applications. You can plug one into your C++ program. [See](https://www.hboehm.info/gc/).
 
 > Programmers consider leaks as a proof of sloppiness.
 
@@ -552,7 +552,7 @@ The copy operations the compiler defines by default do shallow copy.
 
 The funny `&&` notation is called an _rvalue reference._ We use it to define move operations.
 
-A constructor that takes a single argument defines a conversion from its arguemnt type to its class. Such “implicit conversions” can cause undesirable effects. You can suppress it using the `explicit` keyword.
+A constructor that takes a single argument defines a conversion from its argument type to its class. Such “implicit conversions” can cause undesirable effects. You can suppress it using the `explicit` keyword.
 
 > It's a pity that constructors aren't explicit by default; if in doubt, make any constructor that can be invoked with a single argument explicit.
 
@@ -561,16 +561,16 @@ The name of a C-style array decays to an rvalue pointer, pointing to the first e
 Only string literals are zero-terminated. So, something like `char arr[3]{ 'a', 'b', 'c' };` isn't zero-terminated, but `"abc"` is.  
 Zero-terminated strings are usually called “C-style strings.” Also, `'\0' == 0`.
 
-“Caveat emptor!” is latin for “buyer beware.” It's a principle in commerce that the buyer alone is responsible for assessing the quality of purchase before buying. So, the seller could hide defects from the buyer, and one way to address this is to bind a warranty.
+“Caveat emptor!” is Latin for “buyer beware.” It's a principle in commerce that the buyer alone is responsible for assessing the quality of purchase before buying. So, the seller could hide defects from the buyer, and one way to address this is to bind a warranty.
 
 ## Vector, templates, and exceptions
 
-We rarely just use one `push_back()`. So, we can optimize our programs by anticipating such “repeated” changes in size. In fact, all std::vector implmentations keep track of both the number of elements and the amount of “free space” reserved for “future expansion.” Usually reffered to as _free space_ or just _space,_ and you can obtain it using `capacity()` or change it using `reserve()`. Note that `reserve()` never decreases allocation, and both `push_back()` and `resize()` use it internally.
+We rarely just use one `push_back()`. So, we can optimize our programs by anticipating such “repeated” changes in size. In fact, all std::vector implementations keep track of both the number of elements and the amount of “free space” reserved for “future expansion.” Usually referred to as _free space_ or just _space,_ and you can obtain it using `capacity()` or change it using `reserve()`. Note that `reserve()` never decreases allocation, and both `push_back()` and `resize()` use it internally.
 
 By convention, an assignment operator returns a reference to the object assigned to. The notation for that is `*this`.  
-We can check for self-assignmet like this `&arg == this`, and it can be a huge optimization.
+We can check for self-assignment like this `&arg == this`, and it can be a huge optimization.
 
-A _template_ is a mechanism that allows a programmer to use types as paramters (so a “type/template parameter” instead of an “int parameter”) for a class or a function. The compiler then generates a specific class or function when we later provide types as arguments.
+A _template_ is a mechanism that allows a programmer to use types as parameters (so a “type/template parameter” instead of an “int parameter”) for a class or a function. The compiler then generates a specific class or function when we later provide types as arguments.
 
 We call a class template a _type generator._  
 The process of generating types (classes) from a class template given template arguments is called _specialization_ or _template instantiation._ For example, `std::vector<double>` and `std::vector<int>` are said to be specializations of std::vector. 
@@ -580,15 +580,15 @@ Template instantiation takes place at compile-time or link-time.
 
 Instead of writing `template<typename T>` you can write `template<class T>`. They mean the same thing, but people prefer `typename`, “because it's clearer,” and “nobody confuses `typename` thinking it only allows UDTs as template arguments.” We are of the opinion that `class` already means type, so it makes no difference. Also, `class` is shorter.
 
-The simplest definition of _generic programming_ in C++ is “using templates.” That definition is a bit too simpleminded, tho. We shouldn't define fundamental programming concepts in terms of programming language features. We think that the most useful simple definition is: writing code that works with a variety of types presented as arguments, as long as those argument types meet specifc syntactic and semantic requirements. For example, the type of a std::vector must support copy operations.
+The simplest definition of _generic programming_ in C++ is “using templates.” That definition is a bit too simpleminded, tho. We shouldn't define fundamental programming concepts in terms of programming language features. We think that the most useful simple definition is: writing code that works with a variety of types presented as arguments, as long as those argument types meet specific syntactic and semantic requirements. For example, the type of a std::vector must support copy operations.
 
-When what we parameterize is a class, we get a _class template,_ what often called a _parameterized type_ or a _parameterized class._ When what we parameterize is a function, we get a _function template,_ what often called a _parameterized function_ and sometimes also called an “algorithm.” Thus, generic programming is sometimes reffered to as “algorithm-oriented programming”; the focus is more on the algorithms than the data types they use.
+When what we parameterize is a class, we get a _class template,_ what often called a _parameterized type_ or a _parameterized class._ When what we parameterize is a function, we get a _function template,_ what often called a _parameterized function_ and sometimes also called an “algorithm.” Thus, generic programming is sometimes referred to as “algorithm-oriented programming”; the focus is more on the algorithms than the data types they use.
 
-“Polymorphism” is a greek word for “many shapes.” 
+“Polymorphism” is a Greek word for “many shapes.” 
 This form of generic programming relying on explicit template parameters is called _parametric polymorphism._ In contrast, the polymorphism you get from using class hierarchies and virtual functions is called _ad hoc polymorphism._ The reason that both are called “polymorphism” is that each relies on the programmer to present the many versions of the concept by a single interface.
 
-A _concept_ is a set of requirments on a template argument.  
-Some C++14 compilers support concepts (the `requires` keyword and some predicate functions) as an extension, but mine here MSVC doesn't. So, I should specify my requirements in comments instead:
+A _concept_ is a set of requirements on a template argument.  
+Some C++14 compilers support concepts (the `requires` keyword and some predicate functions) as an extension, but mine, MSVC, doesn't. So, I should specify my requirements in comments instead:
 
     template<typename T> // requires Element<T>()
     class vector{ //... };
@@ -600,7 +600,7 @@ For a function template, the compiler can deduce template arguments from functio
 `at()` does range checking, but `[]` doesn't:
 
 - Efficiency: `[]` is faster due to being unchecked.
-- Constrains: exceptions may not be acceptable in some enviroments.
+- Constraints: exceptions may not be acceptable in some environments.
 
 In std_lib_facilities.h there's `Vector` that inherits from std::vector, but abstracts `[]` operators to do range checking. There's also the nasty `#define vector Vector` macro. That means whenever you write `vector` the compiler sees `Vector`. The same thing with `String` and std::string. Mind blowing!
 
@@ -630,7 +630,7 @@ You can refer to std::vector as being part of both “the STL” and “the stan
 
 The STL was designed by Alex Stepanov to provide a framework for general, correct, and efficient algorithms operating on data structures. The ideal was simplicity, generality, and elegance of mathematics.
 
-The centeral concept of the STL is the “sequence.” From the STL point of view, a collection of data is a sequence. A sequence has a begining and an end. We identify the begining and the end of a sequence by a pair of iterators. An _iterator_ is an object that identifies an element of a sequence.  
+The central concept of the STL is the “sequence.” From the STL point of view, a collection of data is a sequence. A sequence has a beginning and an end. We identify the beginning and the end of a sequence by a pair of iterators. An _iterator_ is an object that identifies an element of a sequence.  
 Iterators don't allow `[]`, `+`, or `-`, only what we call “iterator operations” such as `++`, `==`, `!=`, and `*`.
 
 The programmer knows about iterators (not how they get to the data), and the data provider supplies iterators (without exposing details of how the data is stored). To quote Alex Stepanov:
