@@ -626,4 +626,4 @@ Providing hints is difficult when working with templates, because types can be a
 ## Containers and iterators
 
 The STL is only the parameterized (specialized) part of the ISO C++ standard library. It privides containers, algorithms, etc.  
-You can refer to std::vector is being part of both “the STL” and “the standard library.”
+You can refer to std::vector as being part of both “the STL” and “the standard library.”
