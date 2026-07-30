@@ -632,3 +632,9 @@ The STL was designed by Alex Stepanov to provide a framework for general, correc
 
 The centeral concept of the STL is the “sequence.” From the STL point of view, a collection of data is a sequence. A sequence has a begining and an end. We identify the begining and the end of a sequence by a pair of iterators. An _iterator_ is an object that identifies an element of a sequence.  
 Iterators don't allow `[]`, `+`, or `-`, only what we call “iterator operations” such as `++`, `==`, `!=`, and `*`.
+
+The programmer knows about iterators (not how they get to the data), and the data provider supplies iterators (without exposing details of how the data is stored). To quote Alex Stepanov:
+
+> The reason STL algorithms and containers work so well together is that they don't know about each other.
+
+instead, they both understand sequences defined by pairs of iterators.
