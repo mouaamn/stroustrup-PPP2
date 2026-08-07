@@ -631,7 +631,7 @@ You can refer to std::vector as being part of both “the STL” and “the stan
 The STL was designed by Alex Stepanov to provide a framework for general, correct, and efficient algorithms operating on data structures. The ideal was simplicity, generality, and elegance of mathematics.
 
 The central concept of the STL is the “sequence.” From the STL point of view, a collection of data is a sequence. A sequence has a beginning and an end. We identify the beginning and the end of a sequence by a pair of iterators. An _iterator_ is an object that identifies an element of a sequence.  
-Iterators don't allow `[]`, `+`, or `-`, only what we call “iterator operations” such as `++`, `==`, `!=`, and `*`.
+Iterators don't allow `[]`, `+`, or `-`, only what we call “iterator operations” such as `++`, `==`, `!=`, `*`, and sometimes `--`.
 
 The programmer knows about iterators (not how they get to the data), and the data provider supplies iterators (without exposing details of how the data is stored). To quote Alex Stepanov:
 
