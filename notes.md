@@ -638,3 +638,5 @@ The programmer knows about iterators (not how they get to the data), and the dat
 > The reason STL algorithms and containers work so well together is that they don't know about each other.
 
 instead, they both understand sequences defined by pairs of iterators.
+
+In the standard library we have `std::vector<T>::iterator`, `std::list<T>::iterator`, `std::map<K, V>::iterator`, etc.
