@@ -639,4 +639,5 @@ The programmer knows about iterators (not how they get to the data), and the dat
 
 instead, they both understand sequences defined by pairs of iterators.
 
-In the standard library we have `std::vector<T>::iterator`, `std::list<T>::iterator`, `std::map<K, V>::iterator`, etc.
+In the standard library we have `std::vector<T>::iterator`, `std::list<T>::iterator`, `std::map<K, V>::iterator`, etc.  
+All the standard library containers/algorithms are defined in terms of the names: `value_type`, `size_type`, `iterator`, `const_iterator`, etc.
