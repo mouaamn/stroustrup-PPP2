@@ -644,4 +644,5 @@ All the standard library containers/algorithms are defined in terms of the names
 
 range-for-statements are defined in terms of `begin()` and `end()` iterators. 
 
-In a list you can add and remove elements without moving other elements.
+In a list you can add and remove elements without moving other elements.  
+You could represent a document as a list of `vector<char>`.
