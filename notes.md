@@ -625,7 +625,7 @@ Providing hints is difficult when working with templates, because types can be a
 
 ## Containers and iterators
 
-The STL is only the parameterized (specialized) part of the ISO C++ standard library.
+The STL is only the parameterized (specialized) part of the ISO C++ standard library.  
 You can refer to std::vector as being part of both “the STL” and “the standard library.”
 
 The STL was designed by Alex Stepanov to provide a framework for general, correct, and efficient algorithms operating on data structures. The ideal was simplicity, generality, and elegance of mathematics.
