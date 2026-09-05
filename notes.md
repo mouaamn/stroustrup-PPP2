@@ -647,4 +647,4 @@ range-for-statements are defined in terms of `begin()` and `end()` iterators.
 In a list you can add and remove elements without moving other elements.  
 You could represent a document as a list of `vector<char>`.
 
-`std::advance` moves an iterator `p` `n` times forward.
+`std::advance` moves an iterator `p` `n` times.
