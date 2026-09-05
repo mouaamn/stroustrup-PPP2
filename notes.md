@@ -641,7 +641,8 @@ instead, they both understand sequences defined by pairs of iterators.
 In the standard library we have `std::vector<T>::iterator`, `std::list<T>::iterator`, `std::map<K, V>::iterator`, etc.  
 All the standard library containers/algorithms are defined in terms of the names: `value_type`, `size_type`, `iterator`, `const_iterator`, etc.
 
-range-for-statements are defined in terms of `begin()` and `end()` iterators. 
+range-for-statements are defined in terms of `begin()` and `end()` iterators.  
+STL algorithms return `end()` to indicate “not found.”
 
 In a list you can add and remove elements without moving other elements.  
 You could represent a document as a list of `vector<char>`.
