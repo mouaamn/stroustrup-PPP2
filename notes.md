@@ -650,3 +650,5 @@ You could represent a document as a `std::list<vector<char>>`.
 
 `std::advance` moves an iterator `p` `n` times.  
 `std::advance` for a `std::list<T>::iterator` will move one at a time (`++`, `--`), but for a `std::vector<T>::iterator` it will directly go to the element (`[]`).
+
+A _bidirectional iterator_ provides both `++` and `--`.  
