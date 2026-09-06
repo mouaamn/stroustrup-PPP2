@@ -645,7 +645,8 @@ range-for-statements are defined in terms of `begin()` and `end()` iterators.
 STL algorithms return `end()` to indicate “not found.”
 
 In a list you can add and remove elements without moving other elements.  
-You could represent a document as a list of `vector<char>`.
+You could represent a document as a list of `vector<char>`.  
+`insert()` and `erase()` are called “list operations.”
 
 `std::advance` moves an iterator `p` `n` times.  
 `std::advance` for a `std::list<T>::iterator` will move one at a time (`++`, `--`), but for a `std::vector<T>::iterator` it will directly go to the element (`[]`).
