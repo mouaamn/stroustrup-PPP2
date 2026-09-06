@@ -652,7 +652,7 @@ You could represent a document as a `std::list<vector<char>>`.
 `std::advance` for a `std::list<T>::iterator` will move one at a time (`++`, `--`), but for a `std::vector<T>::iterator` it will directly go to the element (`[]`).
 
 An _input iterator_ allows reading via `*`.  
-An _output iterator_" allows writing via `*`.  
+An _output iterator_ allows writing via `*`.  
 A _forward iterator_ provides `++`.  
 A _bidirectional iterator_ provides both `++` and `--`.  
 A _random-access iterator_ provides `[]`, `+`, and `-`. 
