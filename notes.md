@@ -628,7 +628,7 @@ Providing hints is difficult when working with templates, because types can be a
 The STL is only the parameterized (specialized) part of the ISO C++ standard library.  
 You can refer to std::vector as being part of both “the STL” and “the standard library.”
 
-The STL was designed by Alex Stepanov. The ideal was simplicity, “generality,” and elegance of mathematics.
+The STL is a framework designed by Alex Stepanov. The ideal was simplicity, “generality,” and elegance of mathematics.
 
 The central concept of the STL is the “sequence.” From the STL point of view, any collection of data is a sequence. A sequence has a beginning and an end. We identify the beginning and the end of a sequence by a pair of iterators. An _iterator_ is an object that identifies an element of a sequence.  
 
