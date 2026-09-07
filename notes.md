@@ -639,7 +639,7 @@ The programmer knows about iterators (not how they get to the data), and the dat
 instead, they both understand sequences defined by pairs of iterators.
 
 In the standard library we have `std::vector<T>::iterator`, `std::list<T>::iterator`, `std::map<K, V>::iterator`, etc.  
-All the standard library containers/algorithms are defined in terms of the names: `value_type`, `size_type`, `iterator`, `const_iterator`, etc.
+All the standard library containers are defined in terms of the type-aliases: `value_type`, `size_type`, `iterator`, `const_iterator`, etc.
 
 range-for-statements are defined in terms of `begin()` and `end()` iterators.  
 STL algorithms return `end()` to indicate “not found.”
