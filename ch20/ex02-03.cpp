@@ -17,6 +17,22 @@ double high(double* begin, double* end) {
 	return highest;
 }
 
+double high(double p[], int count) {
+	double highest{ p[0] };
+	for (size_t i{ 1 }; i < count; ++i)
+		if (p[i] > highest)
+			highest = p[i];
+	return highest;
+}
+
+double high(const vector<double>& v) {
+	double highest{ v[0] };
+	for (size_t i{ 1 }; i < v.size(); ++i)
+		if (v[i] > highest)
+			highest = v[i];
+	return highest;
+}
+
 int main()
 
 try {
@@ -26,9 +42,11 @@ try {
 	vector<double>* jill_data{ get_from_jill() };
 	auto& v = *jill_data;
 
-	cout 
+	cout
 		<< high(jack_data, jack_data + jack_count) << '\n'
-		<< high(&v[0], &v[0] + v.size()) << '\n';
+		<< high(jack_data, jack_count) << '\n'
+		<< high(&v[0], &v[0] + v.size()) << '\n'
+		<< high(v) << '\n';
 
 	delete jack_data;
 	delete jill_data;
