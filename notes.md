@@ -656,3 +656,5 @@ An _output iterator_ allows writing via `*`.
 A _forward iterator_ provides `++`.  
 A _bidirectional iterator_ provides both `++` and `--`.  
 A _random-access iterator_ provides `[]`, `+`, and `-`. 
+
+A _dependent name_ is a name that depends on a template parameter.  
