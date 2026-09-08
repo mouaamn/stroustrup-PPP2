@@ -658,3 +658,4 @@ A _bidirectional iterator_ provides both `++` and `--`.
 A _random-access iterator_ provides `[]`, `+`, and `-`. 
 
 A _dependent name_ is a name that depends on a template parameter.  
+`typename` tells the compiler that the dependent name is an actual type.
