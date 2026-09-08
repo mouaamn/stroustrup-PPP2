@@ -319,7 +319,6 @@ The reasons for input operations failing are limitless, but the std::istream lim
 - bad: something serious happened
 
 If an input operation encounters a simple format error, it lets the stream `fail()`, assuming that you might be able to recover, or throws an exception if there's no chance of recovery. On the other hand, if something really nasty happens, such as a bad disk read, the input operation lets the stream go `bad()`.  
-If the stream is bad it's also fail.
 
 The main design problem with overloading output operators is that different people might prefer the output to look different.
 
