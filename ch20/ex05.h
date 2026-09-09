@@ -151,7 +151,7 @@ namespace DT {
 	}
 
 	template<typename T>
-	void  vector<T>::push_back(const value_type& val) {
+	void vector<T>::push_back(const value_type& val) {
 		if (space == 0)
 			reserve(8);
 		else if (sz == space)
@@ -184,7 +184,7 @@ namespace DT {
 	}
 
 	template<typename T>
-	const typename vector<T>::const_iterator vector<T>::end() const {
+	typename vector<T>::const_iterator vector<T>::end() const {
 		return elem + sz;
 	}
 
@@ -195,7 +195,7 @@ namespace DT {
 	typename vector<T>::size_type vector<T>::capacity() const { return space; }
 
 	// helpers
-	
+
 	template<typename T>
 	ostream& operator<<(ostream& os, const vector<T>& arg) {
 		os << "{ ";
