@@ -661,6 +661,6 @@ A _dependent name_ is a name that depends on a template parameter.
 
 ## Algorithms and maps
 
-A _predicate_ is a function that returns a _bool._  
+A _predicate_ is a function that returns a `bool`.  
 A _function object_ is an object that behaves like a function.  
 The “call operator” is also called the “application operator.”
