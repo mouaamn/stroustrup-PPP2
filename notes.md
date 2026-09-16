@@ -660,3 +660,5 @@ A _dependent name_ is a name that depends on a template parameter.
 `typename` tells the compiler that the dependent name is an actual type.
 
 ## Algorithms and maps
+
+A _predicate_ is a function that returns a _bool._
