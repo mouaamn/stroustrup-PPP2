@@ -665,4 +665,5 @@ A _predicate_ is a function that returns a `bool`.
 A _function object_ is an object that behaves like a function.  
 The “call operator” is also called the “application operator.”
 
-The STL makes use of function objects for more generality and flexibility.
+The STL makes use of function objects for more generality and flexibility.  
+Most STL algorithms help with data managment (sort, find, etc.), and only a few help with numerical computations and are found in `<numeric>`.
