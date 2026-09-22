@@ -670,4 +670,5 @@ Most STL algorithms help with data managment (sort, find, etc.), and only a few 
 There are many binary function objects defined in `<functional>` such as std::multiplies, std::plus, std::minus, std::divides, etc.
 
 A _map_ is an ordered sequence of (key, value) pairs.  
-An _unordered map_ is a map optimized for keys that are strings.
+An _unordered map_ is a map optimized for keys that are strings.  
+Data structures similar to map are called _associative arrays,_ _hash tables,_ or _red-black trees._ 
