@@ -668,3 +668,5 @@ The “call operator” is also called the “application operator.”
 The STL makes use of function objects for more generality and flexibility.  
 Most STL algorithms help with data managment (sort, find, etc.), and only a few help with numerical computations and are found in `<numeric>`.  
 There are many binary function objects defined in `<functional>` such as std::multiplies, std::plus, std::minus, std::divides, etc.
+
+A _map_ is an ordered sequence of (key, value) pairs.  
