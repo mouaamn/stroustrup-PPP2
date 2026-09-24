@@ -671,7 +671,7 @@ There are many binary function objects defined in `<functional>` such as std::mu
 
 A _map_ is an ordered sequence of (key, value) pairs.  
 An _unordered map_ is a map optimized for keys that are strings.  
-Data structures similar to map are called _associative arrays,_ _hash tables,_ or _red-black trees._ 
+Data structures similar to map are called _associative arrays._
 
 If you `[]` a map with a key that doesn't exist, it inserts it with a default value.  
 
