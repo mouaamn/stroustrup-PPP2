@@ -678,3 +678,5 @@ If you `[]` a map with a key that doesn't exist, it inserts it with a default va
 Maps are made out of balanced trees, specifically red-black trees. A _tree_ is made up of “nodes.” A _node_ holds a key, its corresponding value, and two pointers to descendant nodes.  
 A tree is _balanced_ if there are an approximately equal number of nodes in each side. Being “balanced” minimizes the average number of nodes we have to visit to reach a node.  
 In CS a tree grows downward from the root.  
+
+> We don't have to understand trees to use maps, but it's reasonible to assume that professionals understand at least the fundamentals of their tools.
