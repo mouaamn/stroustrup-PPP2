@@ -676,3 +676,4 @@ Data structures similar to map are called _associative arrays,_ _hash tables,_ o
 If you `[]` a map with a key that doesn't exist, it inserts it with a default value.  
 
 Maps are made out of trees, specifically red-black trees. A _tree_ is made up of “nodes.” A _node_ holds a key, its corresponding value, and two pointers to descendant nodes.  
+A tree is _balanced_ if there are an approximately equal number of nodes in each side. Being “balanced” minimizes the average number of nodes we have to visit to reach a node.  
