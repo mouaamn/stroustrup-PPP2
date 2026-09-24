@@ -682,3 +682,5 @@ In CS a tree grows downward from the root.
 > We don't have to understand trees to use maps, but it's reasonible to assume that professionals understand at least the fundamentals of their tools.
 
 By default, the order of the nodes in std::map is defined by `std::less<Key>`.  
+
+A _ticker symbol_ is an abbreviation of a company name where a “terse” representation is needed.  
