@@ -684,4 +684,5 @@ In CS a tree grows downward from the root.
 
 A _ticker symbol_ is an abbreviation of a company name where a “terse” representation is needed.  
 
-A _set_ is a map, but without values, only keys.
+A _set_ is a map, but without values, only keys.  
+When we insert keys into a set, duplicates are ignored.
