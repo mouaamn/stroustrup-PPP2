@@ -683,3 +683,5 @@ In CS a tree grows downward from the root.
 > We don't have to understand trees or hash-tables to use maps, but it's reasonible to assume that professionals understand at least the fundamentals of their tools.
 
 A _ticker symbol_ is an abbreviation of a company name where a “terse” representation is needed.  
+
+A _set_ is a map, but without values, only keys.
