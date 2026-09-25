@@ -669,18 +669,17 @@ The STL makes use of function objects for more generality and flexibility.
 Most STL algorithms help with data managment (sort, find, etc.), and only a few help with numerical computations and are found in `<numeric>`.  
 There are many binary function objects defined in `<functional>` such as std::multiplies, std::plus, std::minus, std::divides, etc.
 
-A _map_ is an ordered sequence of (key, value) pairs.  
-An _unordered map_ is a map optimized for keys that are strings.  
-Data structures similar to map are called _associative arrays._
+A _tree_ is made up of “nodes.” A _node_ holds a key, its corresponding value, and two pointers to descendant nodes.  
+A tree is _balanced_ if there are an approximately equal number of nodes in each side. Being “balanced” minimizes the average number of nodes we have to visit to reach a node.  
+
+A _map_ is bascially a sequence of (key, value) pairs where you can define the order. It's made out of a “balanced tree.”  
+An _unordered map_ is a map, but made out of a “hash table” instead, where you can't define the order.  
+Data structures similar to map are called _associative arrays._  
 
 If you `[]` a map with a key that doesn't exist, it inserts it with a default value.  
-
-Maps are made out of balanced trees, specifically red-black trees. A _tree_ is made up of “nodes.” A _node_ holds a key, its corresponding value, and two pointers to descendant nodes.  
-A tree is _balanced_ if there are an approximately equal number of nodes in each side. Being “balanced” minimizes the average number of nodes we have to visit to reach a node.  
+By default, the order of the nodes in std::map is defined by `std::less<Key>`.  
 In CS a tree grows downward from the root.  
 
-> We don't have to understand trees to use maps, but it's reasonible to assume that professionals understand at least the fundamentals of their tools.
-
-By default, the order of the nodes in std::map is defined by `std::less<Key>`.  
+> We don't have to understand trees or hash-tables to use maps, but it's reasonible to assume that professionals understand at least the fundamentals of their tools.
 
 A _ticker symbol_ is an abbreviation of a company name where a “terse” representation is needed.  
