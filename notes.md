@@ -686,3 +686,10 @@ A _ticker symbol_ is an abbreviation of a company name where a “terse” repre
 
 A _set_ is a map, but without values, only keys.  
 When we insert keys into a set, duplicates are ignored.
+
+One a sequence is sorted, we no longer have to search from the beginning using `find()` (called _linear search_); we can use the order to do a _binary search._ It works like this:
+
+- If the middle element equals `x` we found it
+- If `x` is less than the middle element we search to the left
+- Else we search to the right
+- If we reached the end without finding `x` there is no element with the value `x`
