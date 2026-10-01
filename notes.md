@@ -697,3 +697,5 @@ One a sequence is sorted, we no longer have to search from the beginning using `
 and it's done using either `binary_search()` or `equal_range()`. All assume and require that the sequence is sorted or else UB gonna happen.  
 
 ## Ideals and history
+
+> When someone says, “I want a programming language in which I need only say what I want done,” give him a lollipop.
