@@ -695,3 +695,5 @@ One a sequence is sorted, we no longer have to search from the beginning using `
 - If we reached the end without finding `x` there is no element with the value `x`
 
 and it's done using either `binary_search()` or `equal_range()`. All assume and require that the sequence is sorted or else UB gonna happen.  
+
+## Ideals and history
