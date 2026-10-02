@@ -706,3 +706,5 @@ Most (~95%) of history is bunk, so we have to choose which parts of history to k
 
 A _programming language_ is a tool for instructing machines. It can be _general-purpose_ or _special-purpose._  
 There are a lot programming languages. The rate of language invention is at least 2000 a decade, and the rate of “language death” is about the same.
+
+![David Wheeler From The University of Cambridge](https://i.imgur.com/lJj5Yjf.jpeg)  
