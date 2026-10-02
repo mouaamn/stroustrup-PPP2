@@ -1,6 +1,6 @@
 /*
 	What would we have to do if we couldn’t return end() to indicate “not found”?
-	> I would return std::optional
+	> I would return std::optional.
 */
 
 #include <optional>
