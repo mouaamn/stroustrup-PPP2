@@ -708,3 +708,5 @@ A _programming language_ is a tool for instructing machines. It can be _general-
 There are a lot programming languages. The rate of language invention is at least 2000 a decade, and the rate of “language death” is about the same.
 
 ![David Wheeler From The University of Cambridge](https://i.imgur.com/lJj5Yjf.jpeg)  
+
+In 1949, David Wheeler wrote the first real program ever to run on a stored-program computer (the “table of squares” program). He's one of about ten people who have a claim on having written the first compiler. He invented the function call. He written a brilliant paper on how to design libraries in 1951; that paper was at least 20 years ahead of its time. He was the co-author of the first book about programming. He received the first Ph.D (from Cambridge in 1951) in computer science and later made major contributions to hardware and algorithms. He did most of his important work as a grad student. He worked as a professor at Cambridge and a Fellow of the Royal Soceity (FRS).  
