@@ -702,7 +702,6 @@ and it's done using either `binary_search()` or `equal_range()`. All assume and 
 
 > He who does not know history is condemned to repeat it.
 
-~95% of history is bunk, so we have to choose which parts of history to know and which to discard.
+Most (~95%) of history is bunk, so we have to choose which parts of history to know and which to discard.
 
 A _programming language_ is a tool for instructing machines. It can be _general-purpose_ or _special-purpose._  
-There are a lot programming languages. The rate of language invention is at least 2000 a decade, and the rate of “language death” is about the same.
