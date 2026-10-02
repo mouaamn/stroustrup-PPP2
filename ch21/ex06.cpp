@@ -1,7 +1,7 @@
 /*
 	Discuss the differences between the two implementations.
 	> In the first, the function object had to take objects and use '.,'
-	  but in the second had to take pointers use '->'.
+	  but in the second had to take pointers use '->.'
 */
 
 #include "std_lib_facilities.h"
