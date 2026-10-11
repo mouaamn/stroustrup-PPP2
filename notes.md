@@ -740,3 +740,5 @@ In 1958, _LISP_ was made by John McCarthy at MIT for linked-list and symbolic pr
 John McCarthy had a Ph.D in math from the Princeton University. After his memorable work at MIT, he moved to Stanford in 1962 to help found the Stanford AI lab. He was widely credited for inventing the term “artifical intelligence,” and made many contributions to that field.    
 
 ---
+
+In the late 1950s, many felt that programming was getting too complicated, too adhoc, and too unscientific. They felt that the variety of programming languages was unnecessarily great and that those languages were put together with unsufficient concern for generality and sound fundemental principles. This sentimet that has surfaced many times since then, but a group of people came together under the auspices of IFIP (the International Federation of Information Processing), and in just a couple of years they created a new language that revolutionized the way we think about languages and their definition. Most modern languages — including C++ — owe much to this effort.  
