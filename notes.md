@@ -727,4 +727,4 @@ In 1958, _LISP_ was made by John McCarthy at MIT for linked-list and symbolic pr
 
 <img src="https://i.imgur.com/lj2P5hC.png" alt="Grace Hopper" width="400">  
 
-John McCarthy has a Ph.D in math from the Princeton University. After his memorable work at MIT, he moved to Stanford in 1962 to help found the Stanford AI lab. He was widely credited for inventing the term “artifical intelligence.”  
+John McCarthy has a Ph.D in math from the Princeton University. After his memorable work at MIT, he moved to Stanford in 1962 to help found the Stanford AI lab. He was widely credited for inventing the term “artifical intelligence,” and made many contributions to that field.    
