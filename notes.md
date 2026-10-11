@@ -722,3 +722,5 @@ In 1959-60, _COBOL_ was made by a committee at U.S Department of Defense and a g
 Grace Hopper had a Ph.D in math from the Yale University. She worked for the U.S Navy on the first computers during World War II. She often credited with being the first person to call an error in a computer a “bug.” She was among the early users of the term and documented a use:
 
 <img src="https://i.imgur.com/Al71AN5.png" alt="Grace Hopper" width="400">  
+
+In 1958, _LISP_ was made by John McCarthy at MIT for linked-list and symbolic processing (hence its name: “LISt Processing”). LISP was (and still is) interpreted as opposed to compiled. There are dozens (most likely hundreds) of LISP dialects. The most popular dialects are Common Lisp and Scheme. This family of languages (LISP dialects) has been (and is) the mainstay of AI research.  
