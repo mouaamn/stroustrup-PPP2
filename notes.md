@@ -707,7 +707,7 @@ Most (~95%) of history is bunk, so we have to choose which parts of history to k
 A _programming language_ is a tool for instructing machines. It can be _general-purpose_ or _special-purpose._  
 There are a lot programming languages. The rate of language invention is at least 2000 a decade, and the rate of “language death” is about the same.
 
-![David Wheeler From The University of Cambridge](https://i.imgur.com/lJj5Yjf.jpeg)  
+<img src="https://i.imgur.com/lJj5Yjf.jpeg" alt="Grace Hopper" width="400">  
 
 In 1949, David Wheeler wrote the first real program ever to run on a stored-program computer (the “table of squares” program). He's one of about ten people who have a claim on having written the first compiler. He invented the function call. He written a brilliant paper on how to design libraries in 1951; that paper was at least 20 years ahead of its time. He was the co-author of the first book about programming. He received the world's first Ph.D (from Cambridge in 1951) in computer science and later made major contributions to hardware and algorithms. He did most of his important work as a grad student. He worked as a professor at Cambridge and a Fellow of the Royal Soceity (FRS). He also was Bjarne's Ph.D thesis advisor.  
 
@@ -717,8 +717,8 @@ In 1956, _Fortran_ was made by a team at IBM led by John Backus, and was the mos
 
 In 1959-60, _COBOL_ was made by a committee at U.S Department of Defense and a group of major computer manufacturers to address the needs of business-related computing. “COBOL” stands for “common business-oriented language.” The emphasis was on data manipulation: copying, storing, reading, printing, etc. It was hoped/claimed that COBOL was so close to “business English” that managers could program and programmers would soon become redundant. That's a hope we heard frequently by managers keen on cutting the cost of programming. Now AI is making it “true.” The design was built directly on the FLOW-MATIC language invented by Grace Hopper. One of her contributions was the use of close-to-English syntax (as opposed to the math notation pioneered by Fortran and still dominant today). (COBOL, 60, 61, 65, 68, 70, 80 90, and 04).  
 
-![Grace Hopper](https://i.imgur.com/qa8v1Pq.jpeg)  
+<img src="https://i.imgur.com/qa8v1Pq.jpeg" alt="Grace Hopper" width="400">  
 
 Grace Hopper had a Ph.D in math from the Yale University. She worked for the U.S Navy on the first computers during World War II. She often credited with being the first person to call an error in a computer a “bug.” She was among the early users of the term and documented a use:
 
-![Grace Hopper](https://i.imgur.com/Al71AN5.png)  
+<img src="https://i.imgur.com/Al71AN5.png" alt="Grace Hopper" width="400">  
