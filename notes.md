@@ -707,13 +707,21 @@ Most (~95%) of history is bunk, so we have to choose which parts of history to k
 A _programming language_ is a tool for instructing machines. It can be _general-purpose_ or _special-purpose._  
 There are a lot programming languages. The rate of language invention is at least 2000 a decade, and the rate of “language death” is about the same.
 
+---
+
 <img src="https://i.imgur.com/lJj5Yjf.jpeg" alt="Grace Hopper" width="400">  
 
 In 1949, David Wheeler wrote the first real program ever to run on a stored-program computer (the “table of squares” program). He's one of about ten people who have a claim on having written the first compiler. He invented the function call. He written a brilliant paper on how to design libraries in 1951; that paper was at least 20 years ahead of its time. He was the co-author of the first book about programming. He received the world's first Ph.D (from Cambridge in 1951) in computer science and later made major contributions to hardware and algorithms. He did most of his important work as a grad student. He worked as a professor at Cambridge and a Fellow of the Royal Soceity (FRS). He also was Bjarne's Ph.D thesis advisor.  
 
+---
+
 The three most important languages in the 50s were Fortran, COBOL, and Lisp — to which most modern languages trace their ancestry.   
 
+---
+
 In 1956, _Fortran_ was made by a team at IBM led by John Backus, and was the most significant step in the development of programming languages. “Fortran” stands for “formula translation.” It allowed programmers to write linear algebra much as they found it in textbooks. It also allowed arrays, loops, math functions (e.g., `sin(x)`), I/O, and user made functions and libraries. The notation was also machine independent therefore Fortran was considered the first high-level language. Fortran was and still famous in the domain of scientific and engineering calculations and has been under continuous evolution ever since (Fortran, II, III, IV, 66, 77, 90, 95, 2003, etc.).  
+
+---
 
 In 1959-60, _COBOL_ was made by a committee at U.S Department of Defense and a group of major computer manufacturers to address the needs of business-related computing. “COBOL” stands for “common business-oriented language.” The emphasis was on data manipulation: copying, storing, reading, printing, etc. It was hoped/claimed that COBOL was so close to “business English” that managers could program and programmers would soon become redundant. That's a hope we heard frequently by managers keen on cutting the cost of programming. Now AI is making it “true.” The design was built directly on the FLOW-MATIC language invented by Grace Hopper. One of her contributions was the use of close-to-English syntax (as opposed to the math notation pioneered by Fortran and still dominant today). (COBOL, 60, 61, 65, 68, 70, 80 90, and 04).  
 
@@ -723,8 +731,12 @@ Grace Hopper had a Ph.D in math from the Yale University. She worked for the U.S
 
 <img src="https://i.imgur.com/Al71AN5.png" alt="Grace Hopper" width="400">  
 
+---
+
 In 1958, _LISP_ was made by John McCarthy at MIT for linked-list and symbolic processing (hence its name: “LISt Processing”). LISP was (and still is) interpreted as opposed to compiled. There are dozens (most likely hundreds) of LISP dialects. The most popular dialects are Common Lisp, and Scheme. This family of languages (LISP dialects) has been (and is) the mainstay of AI research.  
 
 <img src="https://i.imgur.com/lj2P5hC.png" alt="Grace Hopper" width="400">  
 
 John McCarthy had a Ph.D in math from the Princeton University. After his memorable work at MIT, he moved to Stanford in 1962 to help found the Stanford AI lab. He was widely credited for inventing the term “artifical intelligence,” and made many contributions to that field.    
+
+---
