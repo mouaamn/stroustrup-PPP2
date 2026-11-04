@@ -719,11 +719,11 @@ The three most important languages in the 50s were Fortran, COBOL, and Lisp — 
 
 ---
 
-In 1956, _Fortran_ was made by a team at IBM led by John Backus, and was the most significant step in the development of programming languages. “Fortran” stands for “formula translation.” It allowed programmers to write linear algebra much as they found it in textbooks. It also allowed arrays, loops, math functions (e.g., `sin(x)`), I/O, and user made functions and libraries. The notation was also machine independent therefore Fortran was considered the first high-level language. Fortran was and still famous in the domain of scientific and engineering calculations and has been under continuous evolution ever since (Fortran, II, III, IV, 66, 77, 90, 95, 2003, etc.).  
+In 1956, _Fortran_ was designed by a team at IBM led by John Backus, and was the most significant step in the development of programming languages. “Fortran” stands for “formula translation.” It allowed programmers to write linear algebra much as they found it in textbooks. It also allowed arrays, loops, math functions (e.g., `sin(x)`), I/O, and user made functions and libraries. The notation was also machine independent therefore Fortran was considered the first high-level language. Fortran was and still famous in the domain of scientific and engineering calculations and has been under continuous evolution ever since (Fortran, II, III, IV, 66, 77, 90, 95, 2003, etc.).  
 
 ---
 
-In 1959-60, _COBOL_ was made by a committee at U.S Department of Defense and a group of major computer manufacturers to address the needs of business-related computing. “COBOL” stands for “common business-oriented language.” The emphasis was on data manipulation: copying, storing, reading, printing, etc. It was hoped/claimed that COBOL was so close to “business English” that managers could program and programmers would soon become redundant. That's a hope we heard frequently by managers keen on cutting the cost of programming. Now AI is making it “true.” The design was built directly on the FLOW-MATIC language invented by Grace Hopper. One of her contributions was the use of close-to-English syntax (as opposed to the math notation pioneered by Fortran and still dominant today). (COBOL, 60, 61, 65, 68, 70, 80 90, and 04).  
+In 1959-60, _COBOL_ was designed by a committee at U.S Department of Defense and a group of major computer manufacturers to address the needs of business-related computing. “COBOL” stands for “common business-oriented language.” The emphasis was on data manipulation: copying, storing, reading, printing, etc. It was hoped/claimed that COBOL was so close to “business English” that managers could program and programmers would soon become redundant. That's a hope we heard frequently by managers keen on cutting the cost of programming. Now AI is making it “true.” The design was built directly on the FLOW-MATIC language invented by Grace Hopper. One of her contributions was the use of close-to-English syntax (as opposed to the math notation pioneered by Fortran and still dominant today). (COBOL, 60, 61, 65, 68, 70, 80 90, and 04).  
 
 <img src="https://i.imgur.com/qa8v1Pq.jpeg" alt="Grace Hopper" width="400">  
 
@@ -733,7 +733,7 @@ Grace Hopper had a Ph.D in math from the Yale University. She worked for the U.S
 
 ---
 
-In 1958, _LISP_ was made by John McCarthy at MIT for linked-list and symbolic processing (hence its name: “LISt Processing”). LISP was (and still is) interpreted as opposed to compiled. There are dozens (most likely hundreds) of LISP dialects. The most popular dialects are Common Lisp, and Scheme. This family of languages (LISP dialects) has been (and is) the mainstay of AI research.  
+In 1958, _LISP_ was designed by John McCarthy at MIT for linked-list and symbolic processing (hence its name: “LISt Processing”). LISP was (and still is) interpreted as opposed to compiled. There are dozens (most likely hundreds) of LISP dialects. The most popular dialects are Common Lisp, and Scheme. This family of languages (LISP dialects) has been (and is) the mainstay of AI research.  
 
 <img src="https://i.imgur.com/lj2P5hC.png" alt="Grace Hopper" width="400">  
 
