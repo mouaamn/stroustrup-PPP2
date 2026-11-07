@@ -759,6 +759,6 @@ The Algol68 was a large and ambitious project. Like Algol60, it was work of “t
 
 In 1970, _Pascal_ was completed and was indeed simple, easy to learn, and after a portable implementation became available it became very popular as a teaching language.  
 
-<img src="https://i.imgur.com/SV8KLq2.png" alt="Niklaus Wirth" width="300">  
+<img src="https://i.imgur.com/SV8KLq2.png" alt="Niklaus Wirth" width="200">  
 
 Niklaus With was a professor at the Technical University of Switzerland. His Ph.D in electrical engineering and computer science was from the University of California. Professor Wirth is the closest thing the world has had to a prefessional language designer. Over period of 25 years, he designed and implemented: Algol W, PL/360, Euler, Pascal, Modula, Modula-2, Oberon, Oberon-2, and Lola (a hardware description language). Wirth describes this as his unending quest for simplicty.   
