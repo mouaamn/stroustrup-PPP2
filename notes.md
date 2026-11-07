@@ -709,7 +709,7 @@ There are a lot programming languages. The rate of language invention is “abou
 
 ---
 
-<img src="https://i.imgur.com/lJj5Yjf.jpeg" alt="Grace Hopper" width="400">  
+<img src="https://i.imgur.com/lJj5Yjf.jpeg" alt="David Wheeler" width="400">  
 
 In 1949, David Wheeler wrote the first real program ever to run on a stored-program computer (the “table of squares” program). He's one of about ten people who have a claim on having written the first compiler. He invented the function call. He written a brilliant paper on how to design libraries in 1951; that paper was at least 20 years ahead of its time. He was the co-author of the first book about programming. He received the world's first Ph.D (from Cambridge in 1951) in computer science and later made major contributions to hardware and algorithms. He did most of his important work as a grad student. He worked as a professor at Cambridge and a Fellow of the Royal Soceity (FRS). He also was Bjarne's Ph.D thesis advisor.  
 
@@ -735,7 +735,7 @@ Grace Hopper had a Ph.D in math from the Yale University. She worked for the U.S
 
 In 1958, _LISP_ was designed by John McCarthy at MIT for linked-list and symbolic processing (hence its name: “LISt Processing”). LISP was (and still is) interpreted as opposed to compiled. There are dozens (most likely hundreds) of LISP dialects. The most popular dialects are Common Lisp, and Scheme. This family of languages (LISP dialects) has been (and is) the mainstay of AI research.  
 
-<img src="https://i.imgur.com/lj2P5hC.png" alt="Grace Hopper" width="400">  
+<img src="https://i.imgur.com/lj2P5hC.png" alt="John McCarthy" width="400">  
 
 John McCarthy had a Ph.D in math from the Princeton University. After his memorable work at MIT, he moved to Stanford in 1962 to help found the Stanford AI lab. He was widely credited for inventing the term “artifical intelligence,” and made many contributions to that field.    
 
@@ -745,7 +745,7 @@ In the late 1950s, many felt that programming was getting too complicated, too a
 
 The “ALGOrithmic Language,” Algol60 was designed by the IFIP 2.1 group. The very notion of a “general-purpose programming language” came with Algol60. Before that languages where scientific (e.g., Fortran), Business (e.g., COBOL), list manipulation (e.g., LISP), simulation, etc. Of these languages, Algol60 is most related to Fortran. Unfortunately, Algol60 was seen as “too weird” by many, “too slow” by Fortran programmers, “not supportive of business related processing” by COBOL programmers, “not flexible enough” by LISP programmers, “too academic” by most people, “too European” by many Americans, etc. Tho, the most major problem is that no one knew how to implement it, and that was solved by a team of programmers led by Peter Naur and Edsger Dijkstra:
 
-<img src="https://i.imgur.com/gzX6GP9.png" alt="Grace Hopper" width="400">  
+<img src="https://i.imgur.com/gzX6GP9.png" alt="Peter Naur and Edsger Dijkstra" width="400">  
 
 Peter Naur was educated (as an astronomer) at the University of Copenhagen and worked at the Technical University Copenhagen (DTH) and for the Danish computer manufacturer Regnecentralen. He learned programming early (1950-51) in the Computer Laboratory in Cambridge, Englad (Denmark didn't have computers that early). He was the co-inventor of BNF (the Backus-Naur form) used to describe grammars and a very early proponent of formal reasoning about programs (Bjarne first — in 1971 or so — learned the use of invariants from Pater Naur's technical articles).  
 
@@ -759,6 +759,6 @@ The Algol68 was a large and ambitious project. Like Algol60, it was work of “t
 
 In 1970, _Pascal_ was completed and was indeed simple, easy to learn, and after a portable implementation became available it became very popular as a teaching language.  
 
-<img src="https://i.imgur.com/SV8KLq2.png" alt="Grace Hopper" width="300">  
+<img src="https://i.imgur.com/SV8KLq2.png" alt="Niklaus Wirth" width="300">  
 
 Niklaus With was a professor at the Technical University of Switzerland. His Ph.D in electrical engineering and computer science was from the University of California. Professor Wirth is the closest thing the world has had to a prefessional language designer. Over period of 25 years, he designed and implemented: Algol W, PL/360, Euler, Pascal, Modula, Modula-2, Oberon, Oberon-2, and Lola (a hardware description language). Wirth describes this as his unending quest for simplicty.   
