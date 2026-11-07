@@ -752,3 +752,9 @@ Peter Naur was educated (as an astronomer) at the University of Copenhagen and w
 Edsger Dijkstra studied physics in Leyden but did his early work in computing in Mathematisch Centrum in Amsterdam. He later worked in quite a few places, including Eindhoven University of Technology, Burroughs Corporation, and the University of Taxes (Austin). He was one of the designers and implementers of THE operating system — one of the first operating systems to systematically deal with concurrency. THE stands for “Technische Hogeschool Eindhoven” — the university where Edsger Dijkstra worked at the time.  
 
 Although they fixed the implementation issue, the other issues/complaints were still there so they started working on Algol68.  
+
+---
+
+The Algol68 was a large and ambitious project. Like Algol60, it was work of “the Algol committee,” but it took “forever” to complete and many were impatient and doubtful that something useful would ever come from that project. One member of the Algol commitee, Niklaus Wirth, decided simply to desgin and implement his own successor to Algol.
+
+In 1970, _Pascal_ was completed and was indeed simple, easy to learn, and after a portable implementation became available it became very popular as a teaching language.  
