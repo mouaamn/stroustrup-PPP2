@@ -770,3 +770,6 @@ In the end, Pascal proved to be too simple for industrial success. In the late 1
 The _Ada_ programming language was designed to be a language for all the programming of the U.S. Department of Defense. In particular, it was to be a language in which to deliver reliable and maintainable code for embedded systems programming. Its most obvious ancestors are Pascal and Simula. The Ada design emphasized: data abstraction (no inheritance until 1995), strong static type checking, direct language support for concurrency.  
 
 The U.S DoD did not design the language; it designed an elaborate process for designing the language. A huge number of people and organizations contributed to the design process, which progressed through two competitions (first for the best design, second for the best implementation). This immense 20-year project (1975-98) was from 1980 managed by a department called AJPO (Ada Joint Program Office). Ada was named after Lady Augusta Lovelace (a daughter of Lord Byron, the poet). Lady Lovelace could be claimed to have been the first programmer of modern times, because she had worked with Charles Babbage on a revolutionary mechanical computer in the 1940s. Unfortunately, Babbage’s machine was unsuccessful as a practical tool. Ada is still used today.  
+
+
+<img src="https://i.imgur.com/Td2X96P.png" alt="Ada and Babbage" width="350">  
