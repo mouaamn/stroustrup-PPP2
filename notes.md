@@ -777,3 +777,9 @@ The U.S. DoD did not design the language; it designed an elaborate process for d
 ---
 
 _Simula_ was developed in the early to mid 1960s by Kristen Nygaard and Ole-Johan Dahl at the Norwegian Computing Center and Oslo University. Simula is almost indisputably a member of the Algol family of languages. However we chose (in this paragraph) to single out Simula because it's the source of most fundemental ideas that today referred to as OOP. It was the first language to provide inheritance and virtual functions. The words “class” for “user-defined-type” and “virtual” for “a function that can be overridden and called through the interface of a base class” come from Simula. In Simula, a program becomes a set of interacting objects rather than a monolith.  
+
+<img src="https://i.imgur.com/X9ZaZQv.png" alt="Kristen Nygaard and Ole-Johan Dahl" width="350">  
+
+In the mid-1970s Kristen Nygaard spent significant time in the computer science department of the University of Aarhus, Denmark (where, at the time, Bjarne Stroustrup was studying for his master’s degree). He had a constant social involvement that lasted over decades. He can be given a fair bit of credit for Norway staying out of the EU. Kirsten's master's degree is in mathematics from the University of Oslo. He died in 2002, just a month before he was to receive the ACM's Turing Award — arguably the heighst professional honor for a computer scientist.  
+
+In August 2000 Dahl and Nygaard were made Commanders of the Order of Saint Olav by the King of Norway. Even true geeks can gain recognition in their hometown!
