@@ -773,3 +773,7 @@ The U.S. DoD did not design the language; it designed an elaborate process for d
 
 
 <img src="https://i.imgur.com/Td2X96P.png" alt="Ada and Babbage" width="350">  
+
+---
+
+_Simula_ was developed in the early to mid 1960s by Kristen Nygaard and Ole-Johan Dahl at the Norwegian Computing Center and Oslo University. Simula is almost indisputably a member of the Algol family of languages. However we chose (in this paragraph) to single out Simula because it's the source of most fundemental ideas that today referred to as OOP. It was the first language to provide inheritance and virtual functions. The words “class” for “user-defined-type” and “virtual” for “a function that can be overridden and called through the interface of a base class” come from Simula. In Simula, a program becomes a set of interacting objects rather than a monolith.  
