@@ -783,3 +783,21 @@ _Simula_ was developed in the early to mid 1960s by Kristen Nygaard and Ole-Joha
 In the mid-1970s Kristen Nygaard spent significant time in the computer science department of the University of Aarhus, Denmark (where, at the time, Bjarne Stroustrup was studying for his master’s degree). He had a constant social involvement that lasted over decades. He can be given a fair bit of credit for Norway staying out of the EU. Kristen's master's degree is in mathematics from the University of Oslo. He died in 2002, just a month before he was to receive the ACM's Turing Award — arguably the highest professional honor for a computer scientist.  
 
 In August 2000 Dahl and Nygaard were made Commanders of the Order of Saint Olav by the King of Norway. Even true geeks can gain recognition in their hometown!
+
+---
+
+In 1970, it was “well known” that serious systems programming in particular operating systems had to be done in assembly code and couldn't be done portably. So several individuals and groups set out to challenge that orthodoxy. In the long run, the C programming language was by far the most successful of those efforts.  
+
+Dennis Ritchie designed and implemented the C programming language in Bell Laboratories' Computer Science Research Center in New Jersey. The beauty of C is that it's a deliberately simple programming language sticking very close to the fundamental aspects of hardware. Most of the current complexities were added after his original design and in several cases over Dennis Ritchie's objections.  
+
+<img src="https://i.imgur.com/7GUhda4.png" alt="Ken Thompson and Dennis Ritchie" width="350">  
+
+Together with Ken Thompson, Dennis Ritchie is the co-inventor of Unix, easily the most influential operating system of all times. C was (and is) associated with the Unix operating system and through that with Linux and the open-source movement.  
+
+For 40 years, Dennis Ritchie worked in Bell Labs. He was a graduate of Harvard University (physics); his Ph.D. in applied mathematics was never granted because he either forgot to or refused to pay a small ($60) registration fee.  
+
+<img src="https://i.imgur.com/XPqdghw.png" alt="Brian Kernighan" width="350">  
+
+Brian Kernighan is a computer scientist and a writer. The style of PPP2 is derived in part from the tutorial sections of his masterpiece, The C Programming Language (known as “K&R” after its authors, Brian Kernighan and Dennis Ritchie, although Kernighan had no part in the design of the C language). Over the years, Brian Kernighan has been involved with many influential projects including: AWK — an early scripting language named after the initials of its authors (Aho, Weinberger, and Kernighan) — and AMPL, “A Mathematical Programming Language.”  
+
+For more than 30 years Brian worked in Bell Labs. Bell Labs later became AT&T Bell Labs, which in turn split into AT&T Labs and Lucent Bell Labs. He is a graduate of the University of Toronto (physics); his Ph.D. is in electrical engineering from Princeton University.  
