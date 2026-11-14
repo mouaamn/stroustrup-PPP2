@@ -801,3 +801,11 @@ For 40 years, Dennis Ritchie worked in Bell Labs. He was a graduate of Harvard U
 Brian Kernighan is a computer scientist and a writer. The style of PPP2 is derived in part from the tutorial sections of his masterpiece, The C Programming Language (known as “K&R” after its authors, Brian Kernighan and Dennis Ritchie, although Kernighan had no part in the design of the C language). Over the years, Brian Kernighan has been involved with many influential projects including: AWK — an early scripting language named after the initials of its authors (Aho, Weinberger, and Kernighan) — and AMPL, “A Mathematical Programming Language.”  
 
 For more than 30 years Brian worked in Bell Labs. Bell Labs later became AT&T Bell Labs, which in turn split into AT&T Labs and Lucent Bell Labs. He is a graduate of the University of Toronto (physics); his Ph.D. is in electrical engineering from Princeton University.  
+
+The C Family tree looks like this:
+
+<img src="https://i.imgur.com/IpbrjRG.png" alt="The C Language Family Tree" width="350">  
+
+The origins of C lay in the never completed CPL language in England, the BCPL (Basic CPL) language that Martin Richards made while visting MIT on leave from Cambridge University, and an interpreted language called B made by Ken Thompson. Later C was standardized by ANSI and the ISO.  
+
+CPL was a joint project between Cambridge University and Imperial College in London. Initially, the project had been doen in Cambridge, so “C” officially stood for “Cambridge.” When Imperial College became a partner, the official explanation of the “C” became “Combined.” In reality, it always stood for “Christopher” after Christopher Strachey, CPL's main designer.  
