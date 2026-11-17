@@ -821,3 +821,8 @@ Bjarne Stroustrup received a master's degree (in mathematics with computer scien
 The work on C++ started in 1979 and led to a commercial release in 1985. After its initial design and implementation, Bjarne developed it further together with friends at Bell Labs and elsewhere until its standardization officially started in 1990. Since then, the definition of C++ has been developed by ANSI (the national standards body for the United States) and since 1991 by ISO (the international standard organization). Bjarne has taken a major part in that effort. The first international standard (C++98) was ratified in 1998 and the second in 2011 (C++11).  
 
 The most significant development in C++ after it's initial decade of growth was the STL. It was the outcome of work — primarily by Alexander (Alex) Stepanov — over decades aiming at producing the most general and efficient software inspired by the beauty and utility of mathematics.  
+
+
+<img src="https://i.imgur.com/cllY3ln.png" alt="Alexander Stepanov" width="350">  
+
+Alex is a graduate of the University of Moscow and has worked on robotics, algorithms, and more, using a variety of languages (including Ada, Scheme, and C++). Since 1979, he has worked in U.S. academia and industry, notably at GE Labs, AT&T Bell Labs, Hewlett-Packard, Silicon Graphics, and Adobe.  
