@@ -809,3 +809,15 @@ The C Family tree looks like this:
 The origins of C lay in the never completed CPL language in England, the BCPL (Basic CPL) language that Martin Richards made while visting MIT on leave from Cambridge University, and an interpreted language called B made by Ken Thompson. Later C was standardized by ANSI and the ISO.  
 
 CPL was a joint project between Cambridge University and Imperial College in London. Initially, the project had been doen in Cambridge, so “C” officially stood for “Cambridge.” When Imperial College became a partner, the official explanation of the “C” became “Combined.” In reality, it always stood for “Christopher” after Christopher Strachey, CPL's main designer.  
+
+---
+
+C++ was originally designed and implemented by Bjarne Stroustrup in Bell Labs; that is, down corridor from Dennis Ritchie, Ken Thompson, Brian Kernighan, and other Unix greats.  
+
+<img src="https://i.imgur.com/Tg7VcZz.png" alt="Bjarne Stroustrup" width="350">  
+
+Bjarne Stroustrup received a master's degree (in mathematics with computer science) from the university in his hometown, Aarhus in Denmark. Then he went to Cambridge, where he got his Ph.D. (in computer science) working for David Wheeler.  
+
+The work on C++ started in 1979 and led to a commercial release in 1985. After its initial design and implementation, Bjarne developed it further together with friends at Bell Labs and elsewhere until its standardization officially started in 1990. Since then, the definition of C++ has been developed by ANSI (the national standards body for the United States) and since 1991 by ISO (the international standard organization). Bjarne has taken a major part in that effort. The first international standard (C++98) was ratified in 1998 and the second in 2011 (C++11).  
+
+The most significant development in C++ after it's initial decade of growth was the STL. It was the outcome of work — primarily by Alexander (Alex) Stepanov — over decades aiming at producing the most general and efficient software inspired by the beauty and utility of mathematics.  
