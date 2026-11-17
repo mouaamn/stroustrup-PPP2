@@ -826,3 +826,7 @@ The most significant development in C++ after it's initial decade of growth was 
 <img src="https://i.imgur.com/cllY3ln.png" alt="Alexander Stepanov" width="350">  
 
 Alex is a graduate of the University of Moscow and has worked on robotics, algorithms, and more, using a variety of languages (including Ada, Scheme, and C++). Since 1979, he has worked in U.S. academia and industry, notably at GE Labs, AT&T Bell Labs, Hewlett-Packard, Silicon Graphics, and Adobe.  
+
+---
+
+> A professional knows several languages and learns new ones as needed. There is no “one true language.”
